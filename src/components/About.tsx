@@ -14,10 +14,10 @@ const About = () => {
           transition={{ duration: 0.6 }}
           className="text-center mb-12"
         >
-          <h2 className="font-serif text-4xl md:text-5xl lg:text-6xl text-primary italic">
+          <h2 className="font-heading text-4xl md:text-5xl lg:text-6xl text-primary font-light">
             Meet Julie & Brianna
           </h2>
-          <p className="mt-3 font-serif text-xl md:text-2xl text-foreground uppercase tracking-wider">
+          <p className="mt-3 text-xl md:text-2xl text-foreground uppercase tracking-wider">
             The Mother-Daughter Duo Behind Thought Rise
           </p>
         </motion.div>
