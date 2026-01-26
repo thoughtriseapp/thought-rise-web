@@ -26,7 +26,7 @@ const Footer = () => {
           <img 
             src={logo} 
             alt="Thought Rise" 
-            className="h-16 md:h-20 w-auto brightness-0 invert opacity-90"
+            className="h-16 md:h-20 w-auto"
           />
         </div>
 

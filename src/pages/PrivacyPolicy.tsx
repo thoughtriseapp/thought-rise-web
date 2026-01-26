@@ -176,7 +176,7 @@ const PrivacyPolicy = () => {
                 </p>
                 <div className="bg-secondary/50 rounded-lg p-6 text-muted-foreground">
                   <p><strong>ThoughtRise App</strong></p>
-                  <p>Owners: Julie Kerr and Brianna Collins</p>
+                  <p>Owners: Julie Kern and Brianna Collins</p>
                   <p>Email: <a href="mailto:hello@thoughtriseapp.com" className="text-primary hover:underline">hello@thoughtriseapp.com</a></p>
                 </div>
               </section>
