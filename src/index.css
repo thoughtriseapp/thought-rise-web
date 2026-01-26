@@ -142,7 +142,7 @@
   }
 
   .container-narrow {
-    @apply max-w-[1000px] mx-auto px-4 sm:px-6 lg:px-8;
+    @apply max-w-[1100px] mx-auto px-4 sm:px-6 lg:px-8;
   }
 
   .glass-card {
