@@ -16,6 +16,7 @@ export default {
       fontFamily: {
         sans: ['Inter', 'sans-serif'],
         serif: ['Cormorant Garamond', 'serif'],
+        baskerville: ['Libre Baskerville', 'serif'],
       },
       colors: {
         border: "hsl(var(--border))",
