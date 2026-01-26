@@ -35,54 +35,12 @@ const Contact = () => {
         </motion.div>
 
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-16">
-          {/* Contact Info - Now on LEFT */}
+          {/* Contact Form - Now on LEFT */}
           <motion.div
             initial={{ opacity: 0, x: -40 }}
             animate={isVisible ? { opacity: 1, x: 0 } : { opacity: 0, x: -40 }}
             transition={{ duration: 0.7, delay: 0.2 }}
-            className="space-y-8 order-2 lg:order-1"
-          >
-            <div className="flex items-start gap-4">
-              <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0">
-                <Mail className="w-5 h-5 text-primary" />
-              </div>
-              <div>
-                <h3 className="font-semibold text-foreground">Email Us</h3>
-                <a 
-                  href="mailto:hello@thoughtriseapp.com" 
-                  className="text-muted-foreground hover:text-primary transition-colors"
-                >
-                  hello@thoughtriseapp.com
-                </a>
-              </div>
-            </div>
-
-            <div className="flex items-start gap-4">
-              <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0">
-                <MapPin className="w-5 h-5 text-primary" />
-              </div>
-              <div>
-                <h3 className="font-semibold text-foreground">Location</h3>
-                <p className="text-muted-foreground">Atlanta, Georgia</p>
-              </div>
-            </div>
-
-            <div className="pt-4">
-              <p className="font-serif text-2xl text-primary italic mb-2">
-                We're here to help!
-              </p>
-              <p className="text-muted-foreground leading-relaxed">
-                Whether you have questions about the app, want to share feedback, or just want to say hello—reach out anytime. We typically respond within 24-48 hours.
-              </p>
-            </div>
-          </motion.div>
-
-          {/* Contact Form - Now on RIGHT */}
-          <motion.div
-            initial={{ opacity: 0, x: 40 }}
-            animate={isVisible ? { opacity: 1, x: 0 } : { opacity: 0, x: 40 }}
-            transition={{ duration: 0.7, delay: 0.3 }}
-            className="order-1 lg:order-2"
+            className="order-1"
           >
             <form onSubmit={handleSubmit} className="space-y-6">
               <div>
@@ -138,6 +96,48 @@ const Contact = () => {
                 <Send className="w-4 h-4" />
               </button>
             </form>
+          </motion.div>
+
+          {/* Contact Info - Now on RIGHT */}
+          <motion.div
+            initial={{ opacity: 0, x: 40 }}
+            animate={isVisible ? { opacity: 1, x: 0 } : { opacity: 0, x: 40 }}
+            transition={{ duration: 0.7, delay: 0.3 }}
+            className="space-y-8 order-2"
+          >
+            <div className="flex items-start gap-4">
+              <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0">
+                <Mail className="w-5 h-5 text-primary" />
+              </div>
+              <div>
+                <h3 className="font-semibold text-foreground">Email Us</h3>
+                <a 
+                  href="mailto:hello@thoughtriseapp.com" 
+                  className="text-muted-foreground hover:text-primary transition-colors"
+                >
+                  hello@thoughtriseapp.com
+                </a>
+              </div>
+            </div>
+
+            <div className="flex items-start gap-4">
+              <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0">
+                <MapPin className="w-5 h-5 text-primary" />
+              </div>
+              <div>
+                <h3 className="font-semibold text-foreground">Location</h3>
+                <p className="text-muted-foreground">Atlanta, Georgia</p>
+              </div>
+            </div>
+
+            <div className="pt-4">
+              <p className="font-serif text-2xl text-primary italic mb-2">
+                We're here to help!
+              </p>
+              <p className="text-muted-foreground leading-relaxed">
+                Whether you have questions about the app, want to share feedback, or just want to say hello—reach out anytime. We typically respond within 24-48 hours.
+              </p>
+            </div>
           </motion.div>
         </div>
       </div>
