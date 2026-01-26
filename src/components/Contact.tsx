@@ -14,7 +14,7 @@ const Contact = () => {
           transition={{ duration: 0.6 }}
           className="text-center mb-12"
         >
-          <h2 className="font-heading text-3xl md:text-4xl lg:text-5xl font-light text-foreground">
+          <h2 className="font-heading text-3xl md:text-4xl lg:text-5xl font-semibold text-foreground">
             Get In Touch
           </h2>
           <p className="mt-4 text-muted-foreground max-w-xl mx-auto">
@@ -34,7 +34,7 @@ const Contact = () => {
                 <Mail className="w-5 h-5 text-primary" />
               </div>
               <div>
-                <h3 className="font-heading font-light text-foreground">Email Us</h3>
+                <h3 className="font-heading font-semibold text-foreground">Email Us</h3>
                 <a 
                   href="mailto:hello@thoughtriseapp.com" 
                   className="text-muted-foreground hover:text-primary transition-colors"
@@ -49,14 +49,14 @@ const Contact = () => {
                 <MapPin className="w-5 h-5 text-primary" />
               </div>
               <div>
-                <h3 className="font-heading font-light text-foreground">Location</h3>
+                <h3 className="font-heading font-semibold text-foreground">Location</h3>
                 <p className="text-muted-foreground">Atlanta, Georgia</p>
               </div>
             </div>
           </div>
 
           <div className="text-center">
-            <p className="font-heading text-2xl text-primary font-light mb-2">
+            <p className="font-heading text-2xl text-primary font-semibold mb-2">
               We're here to help!
             </p>
             <p className="text-muted-foreground leading-relaxed max-w-md mx-auto">

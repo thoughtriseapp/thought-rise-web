@@ -37,7 +37,7 @@ const Features = () => {
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
-          <h2 className="font-heading text-3xl md:text-4xl lg:text-5xl font-light text-foreground">
+          <h2 className="font-heading text-3xl md:text-4xl lg:text-5xl font-semibold text-foreground">
             How It Works
           </h2>
           <div className="mt-4 w-24 h-1 bg-primary/50 mx-auto rounded-full" />
@@ -68,7 +68,7 @@ const Features = () => {
               </div>
 
               {/* Feature Content */}
-              <h3 className="font-heading text-xl md:text-2xl font-light text-foreground uppercase tracking-wide">
+              <h3 className="font-heading text-xl md:text-2xl font-semibold text-foreground uppercase tracking-wide">
                 {feature.title}
               </h3>
               <p className="mt-3 text-muted-foreground text-sm md:text-base leading-relaxed max-w-xs mx-auto">

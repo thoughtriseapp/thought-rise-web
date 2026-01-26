@@ -55,7 +55,7 @@ const Newsletter = () => {
           className="bg-card rounded-2xl shadow-xl p-8 md:p-12 border border-border/50"
         >
           <div className="max-w-2xl mx-auto text-center">
-            <h2 className="font-heading text-2xl md:text-3xl font-light text-foreground uppercase tracking-wider">
+            <h2 className="font-heading text-2xl md:text-3xl font-semibold text-foreground uppercase tracking-wider">
               Stay in the Know
             </h2>
             <p className="mt-3 text-muted-foreground">
