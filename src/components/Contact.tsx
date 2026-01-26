@@ -12,10 +12,24 @@ const Contact = () => {
           initial={{ opacity: 0, y: 30 }}
           animate={isVisible ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
           transition={{ duration: 0.6 }}
-          className="max-w-md mx-auto text-center"
+          className="text-center mb-12"
         >
-          <div className="space-y-8">
-            <div className="flex flex-col items-center gap-3">
+          <h2 className="font-serif text-3xl md:text-4xl lg:text-5xl font-semibold text-foreground">
+            Get In Touch
+          </h2>
+          <p className="mt-4 text-muted-foreground max-w-xl mx-auto">
+            Have questions or want to connect? We'd love to hear from you.
+          </p>
+        </motion.div>
+
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={isVisible ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
+          transition={{ duration: 0.6, delay: 0.2 }}
+          className="max-w-2xl mx-auto"
+        >
+          <div className="grid sm:grid-cols-2 gap-8 mb-10">
+            <div className="flex flex-col items-center gap-3 text-center">
               <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center">
                 <Mail className="w-5 h-5 text-primary" />
               </div>
@@ -30,7 +44,7 @@ const Contact = () => {
               </div>
             </div>
 
-            <div className="flex flex-col items-center gap-3">
+            <div className="flex flex-col items-center gap-3 text-center">
               <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center">
                 <MapPin className="w-5 h-5 text-primary" />
               </div>
@@ -39,15 +53,15 @@ const Contact = () => {
                 <p className="text-muted-foreground">Atlanta, Georgia</p>
               </div>
             </div>
+          </div>
 
-            <div className="pt-4">
-              <p className="font-serif text-2xl text-primary italic mb-2">
-                We're here to help!
-              </p>
-              <p className="text-muted-foreground leading-relaxed">
-                Whether you have questions about the app, want to share feedback, or just want to say hello—reach out anytime. We typically respond within 24-48 hours.
-              </p>
-            </div>
+          <div className="text-center">
+            <p className="font-serif text-2xl text-primary italic mb-2">
+              We're here to help!
+            </p>
+            <p className="text-muted-foreground leading-relaxed max-w-md mx-auto">
+              Whether you have questions about the app, want to share feedback, or just want to say hello—reach out anytime. We typically respond within 24-48 hours.
+            </p>
           </div>
         </motion.div>
       </div>
