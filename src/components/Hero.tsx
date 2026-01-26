@@ -102,7 +102,7 @@ const Hero = () => {
           duration: 0.6,
           delay: 0.5
         }} className="order-4 lg:hidden text-center">
-            <p className="text-base text-muted-foreground max-w-xl mx-auto leading-relaxed">
+            <p className="text-base text-muted-foreground max-w-xl mx-auto leading-relaxed font-baskerville">
               ThoughtRise is a devotional app that helps you start your day with purpose and intent. With daily scripture-based motivation, this app pushes you to a specific mindset, a focused heart, and a productive day. Align your morning with God's Word and see the positive effects in your life.
             </p>
           </motion.div>
