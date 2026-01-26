@@ -18,6 +18,7 @@ export default {
         serif: ['Cormorant Garamond', 'serif'],
         baskerville: ['Libre Baskerville', 'serif'],
         heading: ['"Helvetica Neue"', 'Helvetica', 'Arial', 'sans-serif'],
+        script: ['"Mrs Saint Delafield"', 'cursive'],
       },
       colors: {
         border: "hsl(var(--border))",
