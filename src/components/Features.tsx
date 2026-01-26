@@ -29,7 +29,7 @@ const Features = () => {
   const { ref, isVisible } = useScrollAnimation({ threshold: 0.1 });
 
   return (
-    <section id="features" className="section-padding gradient-hero">
+    <section id="features" className="section-padding bg-background">
       <div ref={ref} className="container-narrow mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
