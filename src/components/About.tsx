@@ -14,42 +14,10 @@ const About = () => {
           transition={{ duration: 0.6 }}
           className="text-center mb-12"
         >
-          <h2 className="font-allura text-5xl md:text-6xl lg:text-7xl text-foreground">
+          <h2 className="font-script text-5xl md:text-6xl lg:text-7xl text-foreground" style={{ wordSpacing: '0.3em' }}>
             Meet Julie & Brianna
           </h2>
-          <p className="text-sm text-muted-foreground mt-1">↑ Allura</p>
-          
-          <h2 className="font-great-vibes text-5xl md:text-6xl lg:text-7xl text-foreground mt-6">
-            Meet Julie & Brianna
-          </h2>
-          <p className="text-sm text-muted-foreground mt-1">↑ Great Vibes</p>
-          
-          <h2 className="font-kristi text-5xl md:text-6xl lg:text-7xl text-foreground mt-6">
-            Meet Julie & Brianna
-          </h2>
-          <p className="text-sm text-muted-foreground mt-1">↑ Kristi</p>
-          
-          <h2 className="font-script text-5xl md:text-6xl lg:text-7xl text-foreground mt-6">
-            Meet Julie & Brianna
-          </h2>
-          <p className="text-sm text-muted-foreground mt-1">↑ Mrs Saint Delafield</p>
-          
-          <h2 className="font-dancing-script text-5xl md:text-6xl lg:text-7xl text-foreground mt-6">
-            Meet Julie & Brianna
-          </h2>
-          <p className="text-sm text-muted-foreground mt-1">↑ Dancing Script</p>
-          
-          <h2 className="font-pacifico text-5xl md:text-6xl lg:text-7xl text-foreground mt-6">
-            Meet Julie & Brianna
-          </h2>
-          <p className="text-sm text-muted-foreground mt-1">↑ Pacifico</p>
-          
-          <h2 className="font-satisfy text-5xl md:text-6xl lg:text-7xl text-foreground mt-6">
-            Meet Julie & Brianna
-          </h2>
-          <p className="text-sm text-muted-foreground mt-1">↑ Satisfy</p>
-          
-          <p className="mt-6 text-xl md:text-2xl text-foreground uppercase tracking-wider">
+          <p className="mt-3 text-xl md:text-2xl text-foreground uppercase tracking-wider">
             The Mother-Daughter Duo Behind Thought Rise
           </p>
         </motion.div>
