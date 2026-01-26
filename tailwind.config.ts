@@ -19,6 +19,9 @@ export default {
         baskerville: ['Libre Baskerville', 'serif'],
         heading: ['"Helvetica Neue"', 'Helvetica', 'Arial', 'sans-serif'],
         script: ['"Mrs Saint Delafield"', 'cursive'],
+        allura: ['Allura', 'cursive'],
+        'great-vibes': ['"Great Vibes"', 'cursive'],
+        kristi: ['Kristi', 'cursive'],
       },
       colors: {
         border: "hsl(var(--border))",
