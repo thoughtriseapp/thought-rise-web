@@ -1,27 +1,7 @@
 import { motion } from 'framer-motion';
-import { BookOpen, Sparkles, Target } from 'lucide-react';
 import iphoneMockup from '@/assets/iphone-mockup.avif';
 import appStoreBadge from '@/assets/app-store-badge.avif';
 import googlePlayBadge from '@/assets/google-play-badge.avif';
-
-const valueProps = [
-  {
-    icon: BookOpen,
-    title: 'Scripture Affirmations',
-    description: 'Faith-based daily encouragement'
-  },
-  {
-    icon: Sparkles,
-    title: 'Powerful Motivation',
-    description: 'Start each morning inspired'
-  },
-  {
-    icon: Target,
-    title: 'Goal Reminders',
-    description: 'Stay focused on your dreams'
-  }
-];
-
 const Hero = () => {
   return <section id="home" className="relative min-h-screen flex items-center overflow-hidden">
       {/* Base background - ensures no pure white areas */}
@@ -70,7 +50,7 @@ const Hero = () => {
         className="absolute bottom-0 -left-1/4 w-[50vw] h-[40vh] bg-secondary/50 blur-[90px]" 
       />
 
-      <div className="container-narrow mx-auto pt-24 pb-8 relative z-10">
+      <div className="container-narrow mx-auto pt-24 pb-16 relative z-10">
         <div className="flex flex-col lg:grid lg:grid-cols-2 gap-6 lg:gap-12 items-center">
           {/* Headline - order 1 on mobile */}
           <motion.div initial={{
@@ -164,58 +144,13 @@ const Hero = () => {
             </p>
           </motion.div>
         </div>
+      </div>
 
-        {/* Value Props Strip - flows naturally after hero content */}
-        <div className="mt-16 mb-8 flex flex-col md:flex-row justify-between gap-6 md:gap-8">
-          {valueProps.map((prop, index) => {
-            const Icon = prop.icon;
-            const totalItems = valueProps.length;
-            const cycleDuration = 1.5; // seconds per item
-            const totalCycleDuration = cycleDuration * totalItems;
-            
-            return (
-              <motion.div
-                key={prop.title}
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.5, delay: 0.6 + index * 0.2 }}
-                className="flex flex-col items-center text-center py-8 px-6 bg-background/80 backdrop-blur-sm rounded-2xl border border-border/30 w-full md:w-56 lg:w-64"
-              >
-                <motion.div 
-                  className="w-14 h-14 rounded-full bg-primary/20 flex items-center justify-center mb-4"
-                  animate={{
-                    scale: [1, 1, 1.15, 1.1, 1.15, 1.1, 1, 1, 1],
-                    rotate: [0, 0, -3, 3, -2, 2, 0, 0, 0],
-                  }}
-                  transition={{
-                    duration: totalCycleDuration,
-                    repeat: Infinity,
-                    ease: "easeInOut",
-                    times: [
-                      0,
-                      index / totalItems,
-                      (index / totalItems) + 0.05,
-                      (index / totalItems) + 0.1,
-                      (index / totalItems) + 0.15,
-                      (index / totalItems) + 0.2,
-                      (index / totalItems) + 0.25,
-                      (index + 1) / totalItems,
-                      1
-                    ],
-                  }}
-                >
-                  <Icon className="w-7 h-7 text-primary" />
-                </motion.div>
-                <h3 className="font-serif text-lg font-semibold text-foreground tracking-wide mb-2">
-                  {prop.title}
-                </h3>
-                <p className="text-sm text-muted-foreground">
-                  {prop.description}
-                </p>
-              </motion.div>
-            );
-          })}
-        </div>
+      {/* Bottom wave */}
+      <div className="absolute bottom-0 left-0 right-0">
+        <svg viewBox="0 0 1440 120" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-full">
+          <path d="M0 120L60 110C120 100 240 80 360 75C480 70 600 80 720 85C840 90 960 90 1080 85C1200 80 1320 70 1380 65L1440 60V120H1380C1320 120 1200 120 1080 120C960 120 840 120 720 120C600 120 480 120 360 120C240 120 120 120 60 120H0Z" fill="hsl(var(--background))" />
+        </svg>
       </div>
     </section>;
 };
