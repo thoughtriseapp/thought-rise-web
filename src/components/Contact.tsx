@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion';
 import { useScrollAnimation } from '@/hooks/useScrollAnimation';
-import { Mail, MapPin } from 'lucide-react';
+import { Mail } from 'lucide-react';
 
 const Contact = () => {
   const { ref, isVisible } = useScrollAnimation({ threshold: 0.1 });
@@ -28,31 +28,16 @@ const Contact = () => {
           transition={{ duration: 0.6, delay: 0.2 }}
           className="max-w-2xl mx-auto"
         >
-          <div className="grid sm:grid-cols-2 gap-4 sm:gap-4 gap-y-8 mb-16">
-            <div className="flex flex-col items-center gap-3 text-center">
-              <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center">
-                <Mail className="w-5 h-5 text-primary" />
-              </div>
-              <div>
-                <h3 className="font-heading font-semibold text-foreground">Email Us</h3>
-                <a 
-                  href="mailto:hello@thoughtriseapp.com" 
-                  className="text-muted-foreground hover:text-primary transition-colors"
-                >
-                  hello@thoughtriseapp.com
-                </a>
-              </div>
+          <div className="flex justify-center items-center gap-3 mb-16">
+            <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center">
+              <Mail className="w-5 h-5 text-primary" />
             </div>
-
-            <div className="flex flex-col items-center gap-3 text-center">
-              <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center">
-                <MapPin className="w-5 h-5 text-primary" />
-              </div>
-              <div>
-                <h3 className="font-heading font-semibold text-foreground">Location</h3>
-                <p className="text-muted-foreground">Atlanta, Georgia</p>
-              </div>
-            </div>
+            <a 
+              href="mailto:hello@thoughtriseapp.com" 
+              className="text-lg text-muted-foreground hover:text-primary transition-colors"
+            >
+              hello@thoughtriseapp.com
+            </a>
           </div>
 
           <div className="text-center">
