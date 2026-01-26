@@ -40,7 +40,7 @@ const Features = () => {
       }} transition={{
         duration: 0.6
       }} className="text-center mb-16">
-          <h2 className="font-heading text-4xl md:text-5xl lg:text-6xl font-semibold text-foreground">What exactly is Thought Rise?</h2>
+          <h2 className="font-heading text-4xl md:text-5xl font-semibold text-foreground lg:text-5xl">What exactly is Thought Rise?</h2>
           
         </motion.div>
 
