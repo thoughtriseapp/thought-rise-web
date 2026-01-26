@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion';
 import { useScrollAnimation } from '@/hooks/useScrollAnimation';
-import about1 from '@/assets/about-1.avif';
+import aboutFounders from '@/assets/about-founders.jpg';
 
 const About = () => {
   const { ref, isVisible } = useScrollAnimation({ threshold: 0.1 });
@@ -23,16 +23,16 @@ const About = () => {
         </motion.div>
 
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
-          {/* Single Image */}
+          {/* Square Image with Rounded Corners */}
           <motion.div
             initial={{ opacity: 0, scale: 0.95 }}
             animate={isVisible ? { opacity: 1, scale: 1 } : { opacity: 0, scale: 0.95 }}
             transition={{ duration: 0.7, delay: 0.2 }}
             className="relative flex justify-center"
           >
-            <div className="aspect-[4/5] max-w-md overflow-hidden rounded-2xl shadow-xl">
+            <div className="aspect-square max-w-md w-full overflow-hidden rounded-2xl shadow-xl">
               <img
-                src={about1}
+                src={aboutFounders}
                 alt="Julie Kern and Brianna Collins"
                 className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
               />
