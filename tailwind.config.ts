@@ -22,6 +22,9 @@ export default {
         allura: ['Allura', 'cursive'],
         'great-vibes': ['"Great Vibes"', 'cursive'],
         kristi: ['Kristi', 'cursive'],
+        'dancing-script': ['"Dancing Script"', 'cursive'],
+        pacifico: ['Pacifico', 'cursive'],
+        satisfy: ['Satisfy', 'cursive'],
       },
       colors: {
         border: "hsl(var(--border))",

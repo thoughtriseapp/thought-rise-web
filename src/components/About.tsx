@@ -28,7 +28,28 @@ const About = () => {
             Meet Julie & Brianna
           </h2>
           <p className="text-sm text-muted-foreground mt-1">↑ Kristi</p>
-          <p className="mt-3 text-xl md:text-2xl text-foreground uppercase tracking-wider">
+          
+          <h2 className="font-script text-5xl md:text-6xl lg:text-7xl text-foreground mt-6">
+            Meet Julie & Brianna
+          </h2>
+          <p className="text-sm text-muted-foreground mt-1">↑ Mrs Saint Delafield</p>
+          
+          <h2 className="font-dancing-script text-5xl md:text-6xl lg:text-7xl text-foreground mt-6">
+            Meet Julie & Brianna
+          </h2>
+          <p className="text-sm text-muted-foreground mt-1">↑ Dancing Script</p>
+          
+          <h2 className="font-pacifico text-5xl md:text-6xl lg:text-7xl text-foreground mt-6">
+            Meet Julie & Brianna
+          </h2>
+          <p className="text-sm text-muted-foreground mt-1">↑ Pacifico</p>
+          
+          <h2 className="font-satisfy text-5xl md:text-6xl lg:text-7xl text-foreground mt-6">
+            Meet Julie & Brianna
+          </h2>
+          <p className="text-sm text-muted-foreground mt-1">↑ Satisfy</p>
+          
+          <p className="mt-6 text-xl md:text-2xl text-foreground uppercase tracking-wider">
             The Mother-Daughter Duo Behind Thought Rise
           </p>
         </motion.div>
