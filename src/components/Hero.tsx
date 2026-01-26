@@ -111,9 +111,9 @@ const Hero = () => {
           delay: 0.2
         }} className="relative order-3 lg:order-1 flex justify-center mt-4 lg:mt-0">
             <div className="relative">
-              {/* Decorative circle behind phone */}
-              <div className="absolute inset-0 -m-8 bg-gradient-to-br from-accent/40 to-secondary/60 rounded-full blur-sm" />
-              <img src={iphoneMockup} alt="ThoughtRise App on iPhone" className="relative z-10 w-64 md:w-80 lg:w-96 drop-shadow-2xl animate-float" />
+              {/* Very subtle glow behind phone */}
+              <div className="absolute inset-0 -m-8 bg-secondary/20 rounded-full blur-2xl" />
+              <img src={iphoneMockup} alt="ThoughtRise App on iPhone" className="relative z-10 w-64 md:w-80 lg:w-96 drop-shadow-xl animate-float" />
             </div>
           </motion.div>
 
