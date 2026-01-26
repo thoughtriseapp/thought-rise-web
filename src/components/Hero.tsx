@@ -166,31 +166,55 @@ const Hero = () => {
         </div>
 
         {/* Value Props Strip - flows naturally after hero content */}
-        <div className="mt-16 mb-8 py-10 bg-background/80 backdrop-blur-sm rounded-2xl border border-border/30">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12 px-6 md:px-12">
-            {valueProps.map((prop, index) => {
-              const Icon = prop.icon;
-              return (
-                <motion.div
-                  key={prop.title}
-                  initial={{ opacity: 0, y: 20 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.5, delay: 0.6 + index * 0.2 }}
-                  className="flex flex-col items-center text-center"
+        <div className="mt-16 mb-8 grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
+          {valueProps.map((prop, index) => {
+            const Icon = prop.icon;
+            const totalItems = valueProps.length;
+            const cycleDuration = 1.5; // seconds per item
+            const totalCycleDuration = cycleDuration * totalItems;
+            
+            return (
+              <motion.div
+                key={prop.title}
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5, delay: 0.6 + index * 0.2 }}
+                className="flex flex-col items-center text-center py-8 px-6 bg-background/80 backdrop-blur-sm rounded-2xl border border-border/30"
+              >
+                <motion.div 
+                  className="w-14 h-14 rounded-full bg-primary/20 flex items-center justify-center mb-4"
+                  animate={{
+                    scale: [1, 1, 1.15, 1.1, 1.15, 1.1, 1, 1, 1],
+                    rotate: [0, 0, -3, 3, -2, 2, 0, 0, 0],
+                  }}
+                  transition={{
+                    duration: totalCycleDuration,
+                    repeat: Infinity,
+                    ease: "easeInOut",
+                    times: [
+                      0,
+                      index / totalItems,
+                      (index / totalItems) + 0.05,
+                      (index / totalItems) + 0.1,
+                      (index / totalItems) + 0.15,
+                      (index / totalItems) + 0.2,
+                      (index / totalItems) + 0.25,
+                      (index + 1) / totalItems,
+                      1
+                    ],
+                  }}
                 >
-                  <div className="w-14 h-14 rounded-full bg-primary/20 flex items-center justify-center mb-4">
-                    <Icon className="w-7 h-7 text-primary" />
-                  </div>
-                  <h3 className="font-serif text-lg font-semibold text-foreground tracking-wide mb-2">
-                    {prop.title}
-                  </h3>
-                  <p className="text-sm text-muted-foreground">
-                    {prop.description}
-                  </p>
+                  <Icon className="w-7 h-7 text-primary" />
                 </motion.div>
-              );
-            })}
-          </div>
+                <h3 className="font-serif text-lg font-semibold text-foreground tracking-wide mb-2">
+                  {prop.title}
+                </h3>
+                <p className="text-sm text-muted-foreground">
+                  {prop.description}
+                </p>
+              </motion.div>
+            );
+          })}
         </div>
       </div>
     </section>;
