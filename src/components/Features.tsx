@@ -40,7 +40,7 @@ const Features = () => {
       }} transition={{
         duration: 0.6
       }} className="text-center mb-16">
-          <h2 className="font-heading text-3xl md:text-4xl lg:text-5xl font-semibold text-foreground">What exactly is Thought Rise?</h2>
+          <h2 className="font-heading text-4xl md:text-5xl lg:text-6xl font-semibold text-foreground">What exactly is Thought Rise?</h2>
           
         </motion.div>
 
@@ -64,7 +64,7 @@ const Features = () => {
                   <img src={feature.image} alt={feature.title} className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" />
                 </div>
                 {/* Number badge */}
-                <span className="absolute top-2 right-2 w-10 h-10 flex items-center justify-center bg-primary text-primary-foreground text-sm font-semibold rounded-full shadow-lg">
+                <span className="absolute top-2 right-2 w-12 h-12 flex items-center justify-center bg-primary/70 text-primary-foreground text-base font-semibold rounded-full shadow-lg">
                   {feature.number}
                 </span>
               </div>
