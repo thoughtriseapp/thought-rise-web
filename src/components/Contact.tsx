@@ -18,7 +18,7 @@ const Contact = () => {
   };
 
   return (
-    <section id="contact" className="section-padding bg-background">
+    <section id="contact" className="section-padding bg-secondary/50">
       <div ref={ref} className="container-narrow mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
