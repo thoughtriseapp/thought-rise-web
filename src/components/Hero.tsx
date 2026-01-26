@@ -7,36 +7,36 @@ const Hero = () => {
       {/* Base background */}
       <div className="absolute inset-0 bg-gradient-to-br from-secondary/50 via-background to-accent/20" />
       
-      {/* Flowing ambient blobs - large, soft, spanning entire section */}
+      {/* Flowing ambient blobs - more visible, kept away from bottom */}
       <motion.div 
         animate={{ 
           x: [0, 100, -50, 0],
-          y: [0, -80, 40, 0],
+          y: [0, -60, 30, 0],
           scale: [1, 1.3, 0.9, 1],
           borderRadius: ["60% 40% 30% 70% / 60% 30% 70% 40%", "30% 60% 70% 40% / 50% 60% 30% 60%", "50% 50% 40% 60% / 40% 50% 60% 50%", "60% 40% 30% 70% / 60% 30% 70% 40%"]
         }}
-        transition={{ duration: 20, repeat: Infinity, ease: "easeInOut" }}
-        className="absolute -top-1/4 -left-1/4 w-[80vw] h-[80vh] bg-accent/20 blur-[100px]" 
+        transition={{ duration: 15, repeat: Infinity, ease: "easeInOut" }}
+        className="absolute -top-1/4 -left-1/4 w-[70vw] h-[60vh] bg-accent/35 blur-[80px]" 
       />
       <motion.div 
         animate={{ 
-          x: [0, -80, 60, 0],
-          y: [0, 60, -40, 0],
-          scale: [1, 0.85, 1.2, 1],
+          x: [0, -60, 40, 0],
+          y: [0, -40, 20, 0],
+          scale: [1, 0.85, 1.15, 1],
           borderRadius: ["40% 60% 70% 30% / 40% 50% 60% 50%", "60% 40% 30% 70% / 60% 30% 70% 40%", "30% 70% 50% 50% / 50% 40% 60% 50%", "40% 60% 70% 30% / 40% 50% 60% 50%"]
         }}
-        transition={{ duration: 25, repeat: Infinity, ease: "easeInOut", delay: 3 }}
-        className="absolute -bottom-1/4 -right-1/4 w-[70vw] h-[70vh] bg-primary/15 blur-[120px]" 
+        transition={{ duration: 18, repeat: Infinity, ease: "easeInOut", delay: 2 }}
+        className="absolute top-10 -right-1/4 w-[60vw] h-[50vh] bg-primary/25 blur-[100px]" 
       />
       <motion.div 
         animate={{ 
           x: [0, 50, -70, 0],
-          y: [0, -50, 30, 0],
+          y: [0, -30, 20, 0],
           scale: [1, 1.15, 0.95, 1],
           borderRadius: ["50% 50% 40% 60% / 40% 60% 40% 60%", "40% 60% 60% 40% / 60% 40% 60% 40%", "60% 40% 50% 50% / 50% 50% 50% 50%", "50% 50% 40% 60% / 40% 60% 40% 60%"]
         }}
-        transition={{ duration: 18, repeat: Infinity, ease: "easeInOut", delay: 6 }}
-        className="absolute top-1/3 left-1/3 w-[50vw] h-[50vh] bg-highlight/8 blur-[80px]" 
+        transition={{ duration: 12, repeat: Infinity, ease: "easeInOut", delay: 4 }}
+        className="absolute top-1/4 left-1/4 w-[45vw] h-[40vh] bg-highlight/15 blur-[70px]" 
       />
 
       <div className="container-narrow mx-auto pt-24 pb-16 relative z-10">
@@ -113,7 +113,7 @@ const Hero = () => {
             <div className="relative">
               {/* Very subtle glow behind phone */}
               <div className="absolute inset-0 -m-8 bg-secondary/20 rounded-full blur-2xl" />
-              <img src={iphoneMockup} alt="ThoughtRise App on iPhone" className="relative z-10 w-64 md:w-80 lg:w-96 drop-shadow-xl animate-float" />
+              <img src={iphoneMockup} alt="ThoughtRise App on iPhone" className="relative z-10 w-64 md:w-80 lg:w-96 drop-shadow-xl animate-float rounded-[2.5rem]" />
             </div>
           </motion.div>
 
