@@ -32,7 +32,7 @@ const Hero = () => {
             </h1>
 
             {/* Description - desktop only */}
-            <p className="hidden lg:block mt-6 text-base md:text-lg text-muted-foreground max-w-xl leading-relaxed">Thought Rise is a revolutionary Christian app that greets you by name and delivers a personalized audio experience designed to uplift and inspire. With daily scripture-based affirmations, powerful motivation, and goal-focused reminders, Thought Rise helps you stay connected to your faith while pursuing your dreams. Let every morning begin with encouragement tailored just for you!</p>
+            <p className="hidden lg:block mt-6 text-base md:text-lg text-muted-foreground max-w-xl leading-relaxed font-baskerville">Thought Rise is a revolutionary Christian app that greets you by name and delivers a personalized audio experience designed to uplift and inspire. With daily scripture-based affirmations, powerful motivation, and goal-focused reminders, Thought Rise helps you stay connected to your faith while pursuing your dreams. Let every morning begin with encouragement tailored just for you!</p>
 
             {/* App Store Buttons - desktop only */}
             <motion.div initial={{
