@@ -4,12 +4,37 @@ import appStoreBadge from '@/assets/app-store-badge.avif';
 import googlePlayBadge from '@/assets/google-play-badge.avif';
 const Hero = () => {
   return <section id="home" className="relative min-h-screen flex items-center overflow-hidden">
-      {/* Background gradient */}
-      <div className="absolute inset-0 gradient-hero opacity-70" />
+      {/* Background gradient - enhanced visibility */}
+      <div className="absolute inset-0 bg-gradient-to-br from-accent/40 via-secondary/30 to-primary/20" />
       
-      {/* Decorative blob shapes */}
-      <div className="absolute top-20 right-10 w-64 h-64 bg-accent/30 blob-shape blur-3xl" />
-      <div className="absolute bottom-20 left-10 w-48 h-48 bg-primary/20 blob-shape blur-2xl" />
+      {/* Decorative floating blob shapes */}
+      <motion.div 
+        animate={{ 
+          x: [0, 15, -10, 0],
+          y: [0, -20, 10, 0],
+          scale: [1, 1.1, 0.95, 1]
+        }}
+        transition={{ duration: 8, repeat: Infinity, ease: "easeInOut" }}
+        className="absolute top-20 right-10 w-72 h-72 bg-accent/25 blob-shape blur-3xl" 
+      />
+      <motion.div 
+        animate={{ 
+          x: [0, -20, 15, 0],
+          y: [0, 15, -10, 0],
+          scale: [1, 0.9, 1.1, 1]
+        }}
+        transition={{ duration: 10, repeat: Infinity, ease: "easeInOut", delay: 1 }}
+        className="absolute bottom-20 left-10 w-56 h-56 bg-primary/15 blob-shape blur-2xl" 
+      />
+      <motion.div 
+        animate={{ 
+          x: [0, 10, -15, 0],
+          y: [0, -15, 20, 0],
+          scale: [1, 1.05, 0.95, 1]
+        }}
+        transition={{ duration: 12, repeat: Infinity, ease: "easeInOut", delay: 2 }}
+        className="absolute top-1/2 left-1/4 w-40 h-40 bg-highlight/10 blob-shape blur-2xl" 
+      />
 
       <div className="container-narrow mx-auto pt-24 pb-16 relative z-10">
         <div className="flex flex-col lg:grid lg:grid-cols-2 gap-6 lg:gap-12 items-center">
