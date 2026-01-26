@@ -12,7 +12,7 @@ const Hero = () => {
       <div className="absolute bottom-20 left-10 w-48 h-48 bg-primary/20 blob-shape blur-2xl" />
 
       <div className="container-narrow mx-auto pt-24 pb-16 relative z-10">
-        <div className="flex flex-col lg:grid lg:grid-cols-2 gap-8 lg:gap-16 items-center">
+        <div className="flex flex-col lg:grid lg:grid-cols-2 gap-6 lg:gap-12 items-center">
           {/* Headline - order 1 on mobile */}
           <motion.div initial={{
           opacity: 0,
