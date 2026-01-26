@@ -17,7 +17,7 @@ const About = () => {
           <h2 className="font-serif text-4xl md:text-5xl lg:text-6xl text-primary italic">
             Meet Julie & Brianna
           </h2>
-          <p className="mt-3 font-serif text-2xl md:text-3xl text-foreground uppercase tracking-wider">
+          <p className="mt-3 font-serif text-xl md:text-2xl text-foreground uppercase tracking-wider">
             The Mother-Daughter Duo Behind Thought Rise
           </p>
         </motion.div>
@@ -49,13 +49,6 @@ const About = () => {
             transition={{ duration: 0.7, delay: 0.3 }}
             className="space-y-6"
           >
-            <div className="inline-block">
-              <p className="font-serif text-3xl md:text-4xl text-primary italic">
-                A little about us
-              </p>
-              <div className="h-0.5 w-full bg-primary/30 mt-1" />
-            </div>
-
             <div className="space-y-4 text-muted-foreground leading-relaxed">
               <p>
                 Hello! We're Julie Kern and Brianna Collins, a mother-daughter team with a shared passion for faith, personal growth, and helping others rise to their fullest potential. With backgrounds spanning ministry, entrepreneurship, and creative development, we've combined our unique gifts to create ThoughtRise.
