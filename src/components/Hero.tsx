@@ -62,10 +62,9 @@ const Hero = () => {
         }} transition={{
           duration: 0.8
         }} className="order-1 lg:order-2 text-center lg:text-left w-full">
-            <h1 className="font-heading text-3xl sm:text-4xl lg:text-5xl font-semibold leading-tight tracking-wide">
-              <span className="text-foreground text-6xl lg:whitespace-nowrap">Elevate Your Days,</span>
-              <br />
-              <span className="text-primary text-6xl">Transform Your Mornings.</span>
+            <h1 className="font-heading font-semibold leading-tight tracking-wide">
+              <span className="text-foreground text-3xl sm:text-4xl lg:text-6xl block lg:whitespace-nowrap">Elevate Your Days,</span>
+              <span className="text-primary text-3xl sm:text-4xl lg:text-6xl block">Transform Your Mornings.</span>
             </h1>
 
             {/* Description - desktop only */}
