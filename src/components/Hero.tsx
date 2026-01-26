@@ -3,13 +3,10 @@ import iphoneMockup from '@/assets/iphone-mockup.avif';
 import appStoreBadge from '@/assets/app-store-badge.avif';
 import googlePlayBadge from '@/assets/google-play-badge.avif';
 const Hero = () => {
-  return <section id="home" className="relative min-h-screen flex items-center overflow-hidden">
-      {/* Background gradient */}
-      <div className="absolute inset-0 gradient-hero opacity-70" />
-      
+  return <section id="home" className="relative min-h-screen flex items-center overflow-hidden bg-primary/70">
       {/* Decorative blob shapes */}
-      <div className="absolute top-20 right-10 w-64 h-64 bg-accent/30 blob-shape blur-3xl" />
-      <div className="absolute bottom-20 left-10 w-48 h-48 bg-primary/20 blob-shape blur-2xl" />
+      <div className="absolute top-20 right-10 w-64 h-64 bg-primary-foreground/10 blob-shape blur-3xl" />
+      <div className="absolute bottom-20 left-10 w-48 h-48 bg-primary-foreground/5 blob-shape blur-2xl" />
 
       <div className="container-narrow mx-auto pt-24 pb-16 relative z-10">
         <div className="flex flex-col lg:grid lg:grid-cols-2 gap-6 lg:gap-12 items-center">
@@ -24,13 +21,13 @@ const Hero = () => {
           duration: 0.8
         }} className="order-1 lg:order-2 text-center lg:text-left w-full">
             <h1 className="font-heading text-3xl sm:text-4xl lg:text-5xl font-semibold leading-tight tracking-wide">
-              <span className="text-foreground text-6xl lg:whitespace-nowrap">Elevate Your Days,</span>
+              <span className="text-primary-foreground text-6xl lg:whitespace-nowrap">Elevate Your Days,</span>
               <br />
-              <span className="text-primary text-6xl">Transform Your Mornings.</span>
+              <span className="text-primary-foreground/90 text-6xl">Transform Your Mornings.</span>
             </h1>
 
             {/* Description - desktop only */}
-            <p className="hidden lg:block mt-6 text-base md:text-lg text-muted-foreground max-w-xl leading-relaxed">Thought Rise is a revolutionary Christian app that greets you by name and delivers a personalized audio experience designed to uplift and inspire. </p>
+            <p className="hidden lg:block mt-6 text-base md:text-lg text-primary-foreground/80 max-w-xl leading-relaxed">Thought Rise is a revolutionary Christian app that greets you by name and delivers a personalized audio experience designed to uplift and inspire. </p>
 
             {/* App Store Buttons - desktop only */}
             <motion.div initial={{
@@ -84,7 +81,7 @@ const Hero = () => {
         }} className="relative order-3 lg:order-1 flex justify-center mt-4 lg:mt-0">
             <div className="relative">
               {/* Decorative circle behind phone */}
-              <div className="absolute inset-0 -m-8 bg-gradient-to-br from-accent/40 to-secondary/60 rounded-full blur-sm" />
+              <div className="absolute inset-0 -m-8 bg-gradient-to-br from-primary-foreground/20 to-primary-foreground/10 rounded-full blur-sm" />
               <img src={iphoneMockup} alt="ThoughtRise App on iPhone" className="relative z-10 w-64 md:w-80 lg:w-96 drop-shadow-2xl animate-float" />
             </div>
           </motion.div>
@@ -100,7 +97,7 @@ const Hero = () => {
           duration: 0.6,
           delay: 0.5
         }} className="order-4 lg:hidden text-center">
-            <p className="text-base text-muted-foreground max-w-xl mx-auto leading-relaxed">
+            <p className="text-base text-primary-foreground/80 max-w-xl mx-auto leading-relaxed">
               ThoughtRise is a devotional app that helps you start your day with purpose and intent. With daily scripture-based motivation, this app pushes you to a specific mindset, a focused heart, and a productive day. Align your morning with God's Word and see the positive effects in your life.
             </p>
           </motion.div>
@@ -110,7 +107,7 @@ const Hero = () => {
       {/* Bottom wave */}
       <div className="absolute bottom-0 left-0 right-0">
         <svg viewBox="0 0 1440 120" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-full">
-          <path d="M0 120L60 110C120 100 240 80 360 75C480 70 600 80 720 85C840 90 960 90 1080 85C1200 80 1320 70 1380 65L1440 60V120H1380C1320 120 1200 120 1080 120C960 120 840 120 720 120C600 120 480 120 360 120C240 120 120 120 60 120H0Z" fill="hsl(var(--background))" />
+          <path d="M0 120L60 110C120 100 240 80 360 75C480 70 600 80 720 85C840 90 960 90 1080 85C1200 80 1320 70 1380 65L1440 60V120H1380C1320 120 1200 120 1080 120C960 120 840 120 720 120C600 120 480 120 360 120C240 120 120 120 60 120H0Z" className="fill-[hsl(30_40%_75%_/_0.6)]" />
         </svg>
       </div>
     </section>;
