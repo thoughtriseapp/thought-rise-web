@@ -11,7 +11,7 @@ const Hero = () => {
       <div className="absolute top-20 right-10 w-64 h-64 bg-accent/30 blob-shape blur-3xl" />
       <div className="absolute bottom-20 left-10 w-48 h-48 bg-primary/20 blob-shape blur-2xl" />
 
-      <div className="container-narrow mx-auto px-4 sm:px-6 lg:px-8 pt-24 pb-16 relative z-10">
+      <div className="container-narrow mx-auto pt-24 pb-16 relative z-10">
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
           {/* Left side - iPhone Mockup */}
           <motion.div
@@ -38,7 +38,7 @@ const Hero = () => {
             transition={{ duration: 0.8 }}
             className="order-1 lg:order-2 text-center lg:text-left"
           >
-            <h1 className="font-serif text-4xl sm:text-5xl lg:text-6xl font-semibold text-foreground leading-tight tracking-wide uppercase">
+            <h1 className="font-serif text-4xl sm:text-5xl lg:text-6xl font-semibold text-foreground leading-tight tracking-wide">
               Elevate Your Days,
               <br />
               <span className="text-primary">Transform Your</span>
@@ -47,7 +47,7 @@ const Hero = () => {
             </h1>
             
             <p className="mt-6 text-base md:text-lg text-muted-foreground max-w-xl mx-auto lg:mx-0 leading-relaxed">
-              ThoughtRise is a devotional app designed to align your mindset with purpose. Receive daily scripture, motivational content, and goal tracking tools that help you start each day grounded and focused on what matters most.
+              ThoughtRise is a devotional app that helps you start your day with purpose and intent. With daily scripture-based motivation, this app pushes you to a specific mindset, a focused heart, and a productive day. Align your morning with God's Word and see the positive effects in your life.
             </p>
 
             {/* App Store Buttons */}

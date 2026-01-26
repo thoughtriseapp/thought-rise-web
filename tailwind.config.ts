@@ -16,7 +16,6 @@ export default {
       fontFamily: {
         sans: ['Inter', 'sans-serif'],
         serif: ['Cormorant Garamond', 'serif'],
-        script: ['Pinyon Script', 'cursive'],
       },
       colors: {
         border: "hsl(var(--border))",
