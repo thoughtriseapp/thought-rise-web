@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
 import { Link, useLocation } from 'react-router-dom';
-import logo from '@/assets/thought-rise-logo-dark.avif';
+import logo from '@/assets/thought-rise-logo.avif';
 
 const navLinks = [
   { name: 'Home', href: '#home' },
@@ -36,7 +36,7 @@ const Navbar = () => {
     <nav
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         scrolled || isPrivacyPage
-          ? 'bg-secondary/95 backdrop-blur-md shadow-sm'
+          ? 'bg-primary/70 backdrop-blur-md shadow-sm'
           : 'bg-transparent'
       }`}
     >
