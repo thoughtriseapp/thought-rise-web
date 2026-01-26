@@ -32,28 +32,12 @@ const Research = () => {
             transition={{ duration: 0.7 }}
             className="relative"
           >
-            <div className="relative">
-              {/* Main research image */}
-              <div className="rounded-2xl overflow-hidden shadow-xl">
-                <img
-                  src={researchImage}
-                  alt="Morning routine and journaling"
-                  className="w-full h-auto object-cover"
-                />
-              </div>
-              
-              {/* Quote Cards overlaying image */}
-              <div className="absolute -bottom-6 -right-6 bg-card rounded-xl p-4 shadow-lg border border-border/50 max-w-[200px] transform rotate-2">
-                <p className="font-serif text-sm md:text-base text-primary italic leading-relaxed">
-                  "Your morning mindset sets the trajectory for your entire day."
-                </p>
-              </div>
-              
-              <div className="absolute -top-4 -left-4 bg-card rounded-xl p-4 shadow-lg border border-border/50 max-w-[180px] transform -rotate-2">
-                <p className="font-serif text-sm md:text-base text-primary italic leading-relaxed">
-                  "Begin your day with purpose."
-                </p>
-              </div>
+            <div className="rounded-2xl overflow-hidden shadow-xl">
+              <img
+                src={researchImage}
+                alt="Morning routine and journaling"
+                className="w-full h-auto object-cover"
+              />
             </div>
           </motion.div>
 
