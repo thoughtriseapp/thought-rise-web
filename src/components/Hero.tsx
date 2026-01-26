@@ -1,7 +1,27 @@
 import { motion } from 'framer-motion';
+import { BookOpen, Sparkles, Target } from 'lucide-react';
 import iphoneMockup from '@/assets/iphone-mockup.avif';
 import appStoreBadge from '@/assets/app-store-badge.avif';
 import googlePlayBadge from '@/assets/google-play-badge.avif';
+
+const valueProps = [
+  {
+    icon: BookOpen,
+    title: 'Scripture Affirmations',
+    description: 'Faith-based daily encouragement'
+  },
+  {
+    icon: Sparkles,
+    title: 'Powerful Motivation',
+    description: 'Start each morning inspired'
+  },
+  {
+    icon: Target,
+    title: 'Goal Reminders',
+    description: 'Stay focused on your dreams'
+  }
+];
+
 const Hero = () => {
   return <section id="home" className="relative min-h-screen flex items-center overflow-hidden">
       {/* Base background - ensures no pure white areas */}
@@ -146,11 +166,34 @@ const Hero = () => {
         </div>
       </div>
 
-      {/* Bottom wave */}
-      <div className="absolute bottom-0 left-0 right-0">
-        <svg viewBox="0 0 1440 120" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-full">
-          <path d="M0 120L60 110C120 100 240 80 360 75C480 70 600 80 720 85C840 90 960 90 1080 85C1200 80 1320 70 1380 65L1440 60V120H1380C1320 120 1200 120 1080 120C960 120 840 120 720 120C600 120 480 120 360 120C240 120 120 120 60 120H0Z" fill="hsl(var(--background))" />
-        </svg>
+      {/* Value Props Strip */}
+      <div className="absolute bottom-0 left-0 right-0 bg-background/80 backdrop-blur-sm border-t border-border/30">
+        <div className="container-narrow mx-auto py-8">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
+            {valueProps.map((prop, index) => {
+              const Icon = prop.icon;
+              return (
+                <motion.div
+                  key={prop.title}
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.5, delay: 0.6 + index * 0.2 }}
+                  className="flex flex-col items-center text-center"
+                >
+                  <div className="w-12 h-12 rounded-full bg-primary/20 flex items-center justify-center mb-3">
+                    <Icon className="w-6 h-6 text-primary" />
+                  </div>
+                  <h3 className="font-serif text-lg font-semibold text-foreground tracking-wide mb-1">
+                    {prop.title}
+                  </h3>
+                  <p className="text-sm text-muted-foreground">
+                    {prop.description}
+                  </p>
+                </motion.div>
+              );
+            })}
+          </div>
+        </div>
       </div>
     </section>;
 };
