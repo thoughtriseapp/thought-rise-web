@@ -23,7 +23,7 @@ const Hero = () => {
         }} transition={{
           duration: 0.8
         }} className="order-1 lg:order-2 text-center lg:text-left w-full">
-            <h1 className="font-serif text-4xl sm:text-5xl lg:text-6xl font-semibold text-foreground leading-tight tracking-wide">
+            <h1 className="font-baskerville text-4xl sm:text-5xl lg:text-6xl font-semibold text-foreground leading-tight tracking-wide">
               Elevate Your Days,
               <br />
               <span className="text-primary">Transform Your</span>
