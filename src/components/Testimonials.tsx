@@ -18,12 +18,6 @@ const testimonials = [
     title: "App User",
     image: testimonial2,
   },
-  {
-    quote: "Starting my mornings with ThoughtRise has been transformational. I feel more connected to my faith and more intentional about my goals. Highly recommend!",
-    author: "Sarah Johnson",
-    title: "App User",
-    image: testimonial1,
-  },
 ];
 
 const Testimonials = () => {
