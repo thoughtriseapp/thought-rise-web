@@ -14,7 +14,7 @@ const About = () => {
           transition={{ duration: 0.6 }}
           className="text-center mb-12"
         >
-          <h2 className="font-heading text-4xl md:text-5xl lg:text-6xl text-primary font-semibold">
+          <h2 className="font-script text-5xl md:text-6xl lg:text-7xl text-foreground">
             Meet Julie & Brianna
           </h2>
           <p className="mt-3 text-xl md:text-2xl text-foreground uppercase tracking-wider">
