@@ -17,6 +17,7 @@ export default {
         sans: ['Inter', 'sans-serif'],
         serif: ['Cormorant Garamond', 'serif'],
         baskerville: ['Libre Baskerville', 'serif'],
+        heading: ['"Helvetica Neue"', 'Helvetica', 'Arial', 'sans-serif'],
       },
       colors: {
         border: "hsl(var(--border))",
