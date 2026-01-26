@@ -70,7 +70,7 @@ const Hero = () => {
         className="absolute bottom-0 -left-1/4 w-[50vw] h-[40vh] bg-secondary/50 blur-[90px]" 
       />
 
-      <div className="container-narrow mx-auto pt-24 pb-8 relative z-10">
+      <div className="container-narrow mx-auto pt-24 pb-16 relative z-10">
         <div className="flex flex-col lg:grid lg:grid-cols-2 gap-6 lg:gap-12 items-center">
           {/* Headline - order 1 on mobile */}
           <motion.div initial={{
@@ -167,9 +167,9 @@ const Hero = () => {
       </div>
 
       {/* Value Props Strip */}
-      <div className="relative z-10 w-full mt-8 pb-16">
-        <div className="container-narrow mx-auto">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-5">
+      <div className="absolute bottom-0 left-0 right-0 bg-background/80 backdrop-blur-sm border-t border-border/30">
+        <div className="container-narrow mx-auto py-8">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
             {valueProps.map((prop, index) => {
               const Icon = prop.icon;
               return (
