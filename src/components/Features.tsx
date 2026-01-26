@@ -1,27 +1,27 @@
 import { motion } from 'framer-motion';
 import { useScrollAnimation } from '@/hooks/useScrollAnimation';
-import feature1 from '@/assets/feature-1.avif';
-import feature2 from '@/assets/feature-2.avif';
-import feature3 from '@/assets/feature-3.avif';
+import howItWorks1 from '@/assets/how-it-works-1.jpg';
+import howItWorks2 from '@/assets/how-it-works-2.jpg';
+import howItWorks3 from '@/assets/how-it-works-3.jpg';
 
 const features = [
   {
     number: '01',
     title: 'Daily Motivation',
     description: 'Start each day with curated motivational content. Uplifting messages, affirmations, and inspirational quotes tailored to your preferences.',
-    image: feature1,
+    image: howItWorks1,
   },
   {
     number: '02',
     title: 'Scripture-Based Affirmations',
     description: 'Grounded in faith, our scripture-based affirmations help you connect with your spiritual side. Start your morning with purpose and God\'s Word.',
-    image: feature2,
+    image: howItWorks2,
   },
   {
     number: '03',
     title: 'Goal Reminders',
     description: 'Stay on track with personalized goal reminders. Set and achieve your goals with daily check-ins and encouragement to keep you focused.',
-    image: feature3,
+    image: howItWorks3,
   },
 ];
 
@@ -52,10 +52,9 @@ const Features = () => {
               transition={{ duration: 0.6, delay: index * 0.2 }}
               className="group text-center"
             >
-              {/* Feature Image */}
+              {/* Feature Image - Square image in circle container */}
               <div className="relative mb-6 mx-auto w-48 h-48 md:w-56 md:h-56">
-                <div className="absolute inset-0 bg-gradient-to-br from-accent/40 to-secondary rounded-full" />
-                <div className="absolute inset-2 overflow-hidden rounded-full">
+                <div className="w-full h-full overflow-hidden rounded-full">
                   <img
                     src={feature.image}
                     alt={feature.title}
