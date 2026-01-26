@@ -36,7 +36,7 @@ const Navbar = () => {
     <nav
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         scrolled || isPrivacyPage
-          ? 'bg-primary/70 backdrop-blur-md shadow-sm'
+          ? 'bg-primary/80 backdrop-blur-md shadow-sm'
           : 'bg-transparent'
       }`}
     >
@@ -58,10 +58,16 @@ const Navbar = () => {
                 key={link.name}
                 href={isPrivacyPage ? `/${link.href}` : link.href}
                 onClick={() => handleNavClick(link.href)}
-                className="text-sm font-medium text-foreground/80 hover:text-primary transition-colors duration-200 relative group"
+                className={`text-sm font-medium transition-colors duration-200 relative group ${
+                  scrolled || isPrivacyPage
+                    ? 'text-primary-foreground/90 hover:text-primary-foreground'
+                    : 'text-foreground/80 hover:text-primary'
+                }`}
               >
                 {link.name}
-                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full" />
+                <span className={`absolute -bottom-1 left-0 w-0 h-0.5 transition-all duration-300 group-hover:w-full ${
+                  scrolled || isPrivacyPage ? 'bg-primary-foreground' : 'bg-primary'
+                }`} />
               </a>
             ))}
           </div>
@@ -69,7 +75,11 @@ const Navbar = () => {
           {/* Mobile Menu Button */}
           <button
             onClick={() => setIsOpen(!isOpen)}
-            className="md:hidden p-2 text-foreground/80 hover:text-primary transition-colors"
+            className={`md:hidden p-2 transition-colors ${
+              scrolled || isPrivacyPage
+                ? 'text-primary-foreground/90 hover:text-primary-foreground'
+                : 'text-foreground/80 hover:text-primary'
+            }`}
             aria-label="Toggle menu"
           >
             {isOpen ? <X size={24} /> : <Menu size={24} />}
