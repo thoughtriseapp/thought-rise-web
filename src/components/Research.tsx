@@ -22,7 +22,7 @@ const Research = () => {
   const { ref, isVisible } = useScrollAnimation({ threshold: 0.1 });
 
   return (
-    <section id="research" className="section-padding bg-secondary/50">
+    <section id="research" className="section-padding gradient-hero">
       <div ref={ref} className="container-narrow mx-auto">
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
           {/* Left side - Image with quotes */}

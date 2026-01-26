@@ -6,7 +6,7 @@ const About = () => {
   const { ref, isVisible } = useScrollAnimation({ threshold: 0.1 });
 
   return (
-    <section id="about" className="section-padding bg-background">
+    <section id="about" className="section-padding gradient-hero">
       <div ref={ref} className="container-narrow mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 30 }}

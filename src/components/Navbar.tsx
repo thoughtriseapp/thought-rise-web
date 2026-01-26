@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
 import { Link, useLocation } from 'react-router-dom';
-import logo from '@/assets/thought-rise-logo-dark.avif';
+import logo from '@/assets/thought-rise-logo.avif';
 
 const navLinks = [
   { name: 'Home', href: '#home' },
@@ -36,7 +36,7 @@ const Navbar = () => {
     <nav
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         scrolled || isPrivacyPage
-          ? 'bg-secondary/95 backdrop-blur-md shadow-sm'
+          ? 'bg-primary/90 backdrop-blur-md shadow-sm'
           : 'bg-transparent'
       }`}
     >
@@ -58,10 +58,10 @@ const Navbar = () => {
                 key={link.name}
                 href={isPrivacyPage ? `/${link.href}` : link.href}
                 onClick={() => handleNavClick(link.href)}
-                className="text-sm font-medium text-foreground/80 hover:text-primary transition-colors duration-200 relative group"
+                className="text-sm font-medium text-primary-foreground/80 hover:text-primary-foreground transition-colors duration-200 relative group"
               >
                 {link.name}
-                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full" />
+                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary-foreground transition-all duration-300 group-hover:w-full" />
               </a>
             ))}
           </div>
@@ -69,7 +69,7 @@ const Navbar = () => {
           {/* Mobile Menu Button */}
           <button
             onClick={() => setIsOpen(!isOpen)}
-            className="md:hidden p-2 text-foreground/80 hover:text-primary transition-colors"
+            className="md:hidden p-2 text-primary-foreground/80 hover:text-primary-foreground transition-colors"
             aria-label="Toggle menu"
           >
             {isOpen ? <X size={24} /> : <Menu size={24} />}
@@ -82,13 +82,13 @@ const Navbar = () => {
             isOpen ? 'max-h-96' : 'max-h-0'
           }`}
         >
-          <div className="flex flex-col space-y-4 py-4 px-2 bg-secondary/95 backdrop-blur-md rounded-lg mt-2 shadow-lg">
+          <div className="flex flex-col space-y-4 py-4 px-2 bg-primary/95 backdrop-blur-md rounded-lg mt-2 shadow-lg">
             {navLinks.map((link) => (
               <a
                 key={link.name}
                 href={isPrivacyPage ? `/${link.href}` : link.href}
                 onClick={() => handleNavClick(link.href)}
-                className="text-sm font-medium text-foreground/80 hover:text-primary transition-colors duration-200 px-2 py-1"
+                className="text-sm font-medium text-primary-foreground/80 hover:text-primary-foreground transition-colors duration-200 px-2 py-1"
               >
                 {link.name}
               </a>
