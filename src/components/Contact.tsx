@@ -68,7 +68,7 @@ const Contact = () => {
             </div>
 
             <div className="pt-4">
-              <p className="font-script text-2xl text-primary mb-2">
+              <p className="font-serif text-2xl text-primary italic mb-2">
                 We're here to help!
               </p>
               <p className="text-muted-foreground leading-relaxed">

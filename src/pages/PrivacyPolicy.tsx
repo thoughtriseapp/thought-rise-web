@@ -8,7 +8,7 @@ const PrivacyPolicy = () => {
       <Navbar />
       
       <main className="pt-24 pb-16">
-        <div className="container-narrow mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="container-narrow mx-auto">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}

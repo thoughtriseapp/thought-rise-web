@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion';
 import { useScrollAnimation } from '@/hooks/useScrollAnimation';
 import { Check } from 'lucide-react';
+import researchImage from '@/assets/research-image.avif';
 
 const researchPoints = [
   {
@@ -24,11 +25,43 @@ const Research = () => {
     <section id="research" className="section-padding bg-secondary/50">
       <div ref={ref} className="container-narrow mx-auto">
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
-          {/* Left side - Content */}
+          {/* Left side - Image with quotes */}
           <motion.div
             initial={{ opacity: 0, x: -40 }}
             animate={isVisible ? { opacity: 1, x: 0 } : { opacity: 0, x: -40 }}
             transition={{ duration: 0.7 }}
+            className="relative"
+          >
+            <div className="relative">
+              {/* Main research image */}
+              <div className="rounded-2xl overflow-hidden shadow-xl">
+                <img
+                  src={researchImage}
+                  alt="Morning routine and journaling"
+                  className="w-full h-auto object-cover"
+                />
+              </div>
+              
+              {/* Quote Cards overlaying image */}
+              <div className="absolute -bottom-6 -right-6 bg-card rounded-xl p-4 shadow-lg border border-border/50 max-w-[200px] transform rotate-2">
+                <p className="font-serif text-sm md:text-base text-primary italic leading-relaxed">
+                  "Your morning mindset sets the trajectory for your entire day."
+                </p>
+              </div>
+              
+              <div className="absolute -top-4 -left-4 bg-card rounded-xl p-4 shadow-lg border border-border/50 max-w-[180px] transform -rotate-2">
+                <p className="font-serif text-sm md:text-base text-primary italic leading-relaxed">
+                  "Begin your day with purpose."
+                </p>
+              </div>
+            </div>
+          </motion.div>
+
+          {/* Right side - Content */}
+          <motion.div
+            initial={{ opacity: 0, x: 40 }}
+            animate={isVisible ? { opacity: 1, x: 0 } : { opacity: 0, x: 40 }}
+            transition={{ duration: 0.7, delay: 0.2 }}
           >
             <h2 className="font-serif text-3xl md:text-4xl lg:text-5xl font-semibold text-foreground">
               The Research
@@ -41,7 +74,7 @@ const Research = () => {
                   key={point.title}
                   initial={{ opacity: 0, y: 20 }}
                   animate={isVisible ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
-                  transition={{ duration: 0.5, delay: 0.2 + index * 0.15 }}
+                  transition={{ duration: 0.5, delay: 0.3 + index * 0.15 }}
                   className="flex gap-4"
                 >
                   <div className="flex-shrink-0 w-8 h-8 rounded-full bg-highlight/20 flex items-center justify-center">
@@ -57,34 +90,6 @@ const Research = () => {
                   </div>
                 </motion.div>
               ))}
-            </div>
-          </motion.div>
-
-          {/* Right side - Decorative cards */}
-          <motion.div
-            initial={{ opacity: 0, x: 40 }}
-            animate={isVisible ? { opacity: 1, x: 0 } : { opacity: 0, x: 40 }}
-            transition={{ duration: 0.7, delay: 0.2 }}
-            className="relative"
-          >
-            <div className="relative space-y-6">
-              {/* Quote Card 1 */}
-              <div className="bg-card rounded-2xl p-6 md:p-8 shadow-lg border border-border/50 transform rotate-1 hover:rotate-0 transition-transform duration-300">
-                <p className="font-script text-2xl md:text-3xl text-primary leading-relaxed">
-                  "Your morning mindset sets the trajectory for your entire day."
-                </p>
-              </div>
-
-              {/* Quote Card 2 */}
-              <div className="bg-card rounded-2xl p-6 md:p-8 shadow-lg border border-border/50 transform -rotate-1 hover:rotate-0 transition-transform duration-300">
-                <p className="font-script text-2xl md:text-3xl text-primary leading-relaxed">
-                  "Begin your day with purpose, and let that purpose carry you through."
-                </p>
-              </div>
-
-              {/* Decorative elements */}
-              <div className="absolute -top-4 -right-4 w-24 h-24 bg-accent/30 rounded-full blur-2xl" />
-              <div className="absolute -bottom-4 -left-4 w-32 h-32 bg-primary/10 rounded-full blur-2xl" />
             </div>
           </motion.div>
         </div>

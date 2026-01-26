@@ -15,7 +15,7 @@ const Newsletter = () => {
 
   return (
     <section className="bg-secondary py-12 md:py-16">
-      <div ref={ref} className="container-narrow mx-auto px-4 sm:px-6 lg:px-8">
+      <div ref={ref} className="container-narrow mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={isVisible ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}

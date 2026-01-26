@@ -15,8 +15,8 @@ const About = () => {
           transition={{ duration: 0.6 }}
           className="text-center mb-12"
         >
-          <h2 className="font-script text-3xl md:text-4xl lg:text-5xl text-primary">
-            Meet Alise, Julie & Brianna
+          <h2 className="font-serif text-3xl md:text-4xl lg:text-5xl text-primary italic">
+            Meet Julie & Brianna
           </h2>
           <p className="mt-2 font-serif text-xl md:text-2xl text-foreground uppercase tracking-wider">
             The Mother-Daughter Duo Behind Thought Rise
@@ -36,7 +36,7 @@ const About = () => {
                 <div className="aspect-[4/5] overflow-hidden rounded-2xl shadow-xl">
                   <img
                     src={about1}
-                    alt="ThoughtRise Founders"
+                    alt="Julie Kerr and Brianna Collins"
                     className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
                   />
                 </div>
@@ -45,7 +45,7 @@ const About = () => {
                 <div className="aspect-[4/5] overflow-hidden rounded-2xl shadow-xl">
                   <img
                     src={about2}
-                    alt="ThoughtRise Team"
+                    alt="ThoughtRise Founders"
                     className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
                   />
                 </div>
@@ -64,7 +64,7 @@ const About = () => {
             className="space-y-6"
           >
             <div className="inline-block">
-              <p className="font-script text-2xl md:text-3xl text-primary">
+              <p className="font-serif text-2xl md:text-3xl text-primary italic">
                 A little about us
               </p>
               <div className="h-0.5 w-full bg-primary/30 mt-1" />
@@ -72,7 +72,7 @@ const About = () => {
 
             <div className="space-y-4 text-muted-foreground leading-relaxed">
               <p>
-                Hello! We're Julie Kerr, Brianna Collins, and Alise, a mother-daughter trio with a shared passion for faith, personal growth, and helping others rise to their fullest potential. With backgrounds spanning ministry, entrepreneurship, and creative development, we've combined our unique gifts to create ThoughtRise.
+                Hello! We're Julie Kerr and Brianna Collins, a mother-daughter team with a shared passion for faith, personal growth, and helping others rise to their fullest potential. With backgrounds spanning ministry, entrepreneurship, and creative development, we've combined our unique gifts to create ThoughtRise.
               </p>
               <p>
                 Our app was born from our own morning routines—practices that transformed how we approach each day. We believe that when you start your morning with intention, scripture, and gratitude, you set the stage for a life of purpose and joy.

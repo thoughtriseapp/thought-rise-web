@@ -38,7 +38,7 @@ const Features = () => {
           className="text-center mb-16"
         >
           <h2 className="font-serif text-3xl md:text-4xl lg:text-5xl font-semibold text-foreground">
-            App Features
+            How It Works
           </h2>
           <div className="mt-4 w-24 h-1 bg-primary/50 mx-auto rounded-full" />
         </motion.div>
