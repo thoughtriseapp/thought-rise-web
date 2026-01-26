@@ -23,7 +23,7 @@ const Hero = () => {
         }} transition={{
           duration: 0.8
         }} className="order-1 lg:order-2 text-center lg:text-left w-full">
-            <h1 className="font-baskerville text-4xl sm:text-5xl lg:text-6xl font-semibold text-foreground leading-tight tracking-wide">
+            <h1 className="font-heading text-4xl sm:text-5xl lg:text-6xl font-semibold text-foreground leading-tight tracking-wide">
               Elevate Your Days,
               <br />
               <span className="text-primary">Transform Your</span>
@@ -32,7 +32,7 @@ const Hero = () => {
             </h1>
 
             {/* Description - desktop only */}
-            <p className="hidden lg:block mt-6 text-base md:text-lg text-muted-foreground max-w-xl leading-relaxed font-baskerville">Thought Rise is a revolutionary Christian app that greets you by name and delivers a personalized audio experience designed to uplift and inspire. With daily scripture-based affirmations, powerful motivation, and goal-focused reminders, Thought Rise helps you stay connected to your faith while pursuing your dreams. Let every morning begin with encouragement tailored just for you!</p>
+            <p className="hidden lg:block mt-6 text-base md:text-lg text-muted-foreground max-w-xl leading-relaxed">Thought Rise is a revolutionary Christian app that greets you by name and delivers a personalized audio experience designed to uplift and inspire. With daily scripture-based affirmations, powerful motivation, and goal-focused reminders, Thought Rise helps you stay connected to your faith while pursuing your dreams. Let every morning begin with encouragement tailored just for you!</p>
 
             {/* App Store Buttons - desktop only */}
             <motion.div initial={{
@@ -102,7 +102,7 @@ const Hero = () => {
           duration: 0.6,
           delay: 0.5
         }} className="order-4 lg:hidden text-center">
-            <p className="text-base text-muted-foreground max-w-xl mx-auto leading-relaxed font-baskerville">
+            <p className="text-base text-muted-foreground max-w-xl mx-auto leading-relaxed">
               ThoughtRise is a devotional app that helps you start your day with purpose and intent. With daily scripture-based motivation, this app pushes you to a specific mindset, a focused heart, and a productive day. Align your morning with God's Word and see the positive effects in your life.
             </p>
           </motion.div>
