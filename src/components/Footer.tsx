@@ -19,7 +19,7 @@ const socialLinks = [
 
 const Footer = () => {
   return (
-    <footer className="bg-primary py-12 md:py-16">
+    <footer className="bg-primary/70 py-12 md:py-16">
       <div className="container-narrow mx-auto">
         {/* Logo */}
         <div className="flex justify-center mb-8">

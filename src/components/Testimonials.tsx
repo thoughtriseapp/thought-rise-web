@@ -2,22 +2,27 @@ import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useScrollAnimation } from '@/hooks/useScrollAnimation';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
+import testimonial1 from '@/assets/testimonial-1.avif';
+import testimonial2 from '@/assets/testimonial-2.avif';
 
 const testimonials = [
   {
     quote: "ThoughtRise is a total game-changer for my mornings! It's the perfect mix of motivation and faith, with goals that help me start my day feeling inspired and ready to go.",
     author: "Taylor Wagner",
     title: "App User",
+    image: testimonial1,
   },
   {
     quote: "I've tried many devotional apps, but ThoughtRise stands out. The combination of scripture-based affirmations and goal tracking keeps me grounded and focused every single day.",
     author: "Michelle Roberts",
     title: "App User",
+    image: testimonial2,
   },
   {
     quote: "Starting my mornings with ThoughtRise has been transformational. I feel more connected to my faith and more intentional about my goals. Highly recommend!",
     author: "David Chen",
     title: "App User",
+    image: testimonial1,
   },
 ];
 
@@ -49,13 +54,39 @@ const Testimonials = () => {
           </h2>
         </motion.div>
 
+        {/* Circular testimonial images */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={isVisible ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
+          transition={{ duration: 0.6, delay: 0.1 }}
+          className="flex justify-center gap-4 md:gap-6 mb-10"
+        >
+          {testimonials.map((testimonial, index) => (
+            <button
+              key={index}
+              onClick={() => setCurrent(index)}
+              className={`relative w-16 h-16 md:w-20 md:h-20 rounded-full overflow-hidden transition-all duration-300 ${
+                index === current 
+                  ? 'ring-4 ring-primary scale-110' 
+                  : 'opacity-60 hover:opacity-100'
+              }`}
+            >
+              <img
+                src={testimonial.image}
+                alt={testimonial.author}
+                className="w-full h-full object-cover"
+              />
+            </button>
+          ))}
+        </motion.div>
+
         <motion.div
           initial={{ opacity: 0, scale: 0.95 }}
           animate={isVisible ? { opacity: 1, scale: 1 } : { opacity: 0, scale: 0.95 }}
           transition={{ duration: 0.7, delay: 0.2 }}
           className="relative max-w-3xl mx-auto"
         >
-          <div className="bg-card rounded-2xl shadow-xl p-8 md:p-12 border border-border/50 min-h-[280px] flex flex-col justify-center">
+          <div className="bg-card rounded-2xl shadow-xl p-8 md:p-12 border border-border/50 min-h-[240px] flex flex-col justify-center">
             <AnimatePresence mode="wait">
               <motion.div
                 key={current}
