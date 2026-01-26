@@ -43,7 +43,7 @@ const Testimonials = () => {
           transition={{ duration: 0.6 }}
           className="text-center mb-12"
         >
-          <h2 className="font-serif text-3xl md:text-4xl lg:text-5xl text-primary italic">
+          <h2 className="font-heading text-3xl md:text-4xl lg:text-5xl text-primary font-light">
             Our users said...
           </h2>
         </motion.div>
@@ -87,10 +87,9 @@ const Testimonials = () => {
                   exit={{ opacity: 0, y: -20 }}
                   transition={{ duration: 0.4 }}
                 >
-                  {/* Large quote mark */}
-                  <span className="text-6xl md:text-8xl text-primary/30 font-serif leading-none">"</span>
+                  <span className="text-6xl md:text-8xl text-primary/30 font-heading leading-none">"</span>
                   
-                  <blockquote className="text-xl md:text-2xl lg:text-3xl text-foreground leading-relaxed font-serif -mt-8 ml-4">
+                  <blockquote className="text-xl md:text-2xl lg:text-3xl text-foreground leading-relaxed -mt-8 ml-4">
                     {testimonials[current].quote}
                   </blockquote>
                   

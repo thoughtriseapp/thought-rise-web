@@ -47,7 +47,7 @@ const Research = () => {
             animate={isVisible ? { opacity: 1, x: 0 } : { opacity: 0, x: 40 }}
             transition={{ duration: 0.7, delay: 0.2 }}
           >
-            <h2 className="font-serif text-3xl md:text-4xl lg:text-5xl font-semibold text-foreground">
+            <h2 className="font-heading text-3xl md:text-4xl lg:text-5xl font-light text-foreground">
               The Research
             </h2>
             <div className="mt-4 w-24 h-1 bg-primary/50 rounded-full" />
@@ -65,7 +65,7 @@ const Research = () => {
                     <Check className="w-4 h-4 text-highlight" />
                   </div>
                   <div>
-                    <h3 className="font-serif text-lg md:text-xl font-semibold text-foreground">
+                    <h3 className="font-heading text-lg md:text-xl font-light text-foreground">
                       {point.title}
                     </h3>
                     <p className="mt-2 text-muted-foreground text-sm md:text-base leading-relaxed">
