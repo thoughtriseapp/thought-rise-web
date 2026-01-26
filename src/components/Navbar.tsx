@@ -80,16 +80,16 @@ const Navbar = () => {
         {/* Mobile Navigation */}
         <div
           className={`md:hidden overflow-hidden transition-all duration-300 ${
-            isOpen ? 'max-h-96 pb-4' : 'max-h-0'
+            isOpen ? 'max-h-96' : 'max-h-0'
           }`}
         >
-          <div className="flex flex-col space-y-4 pt-4">
+          <div className="flex flex-col space-y-4 py-4 px-2 bg-secondary/95 backdrop-blur-md rounded-lg mt-2 shadow-lg">
             {navLinks.map((link) => (
               <a
                 key={link.name}
                 href={isPrivacyPage ? `/${link.href}` : link.href}
                 onClick={() => handleNavClick(link.href)}
-                className="text-sm font-medium text-foreground/80 hover:text-primary transition-colors duration-200 px-2"
+                className="text-sm font-medium text-foreground/80 hover:text-primary transition-colors duration-200 px-2 py-1"
               >
                 {link.name}
               </a>
