@@ -1,16 +1,48 @@
 import { useState } from 'react';
 import { motion } from 'framer-motion';
 import { useScrollAnimation } from '@/hooks/useScrollAnimation';
+import { useToast } from '@/hooks/use-toast';
 
 const Newsletter = () => {
   const [email, setEmail] = useState('');
+  const [isSubmitting, setIsSubmitting] = useState(false);
   const { ref, isVisible } = useScrollAnimation({ threshold: 0.2 });
+  const { toast } = useToast();
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    // Handle form submission
-    console.log('Newsletter signup:', email);
-    setEmail('');
+    
+    if (!email.trim()) return;
+    
+    setIsSubmitting(true);
+    
+    try {
+      const response = await fetch('https://formspree.io/f/mnjdvjor', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ email }),
+      });
+
+      if (response.ok) {
+        toast({
+          title: "You're in!",
+          description: "Thanks for subscribing to our newsletter.",
+        });
+        setEmail('');
+      } else {
+        throw new Error('Failed to submit');
+      }
+    } catch (error) {
+      toast({
+        title: "Something went wrong",
+        description: "Please try again later.",
+        variant: "destructive",
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
@@ -33,6 +65,7 @@ const Newsletter = () => {
             <form onSubmit={handleSubmit} className="mt-6 flex flex-col sm:flex-row gap-3 max-w-md mx-auto">
               <input
                 type="email"
+                name="email"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
                 placeholder="Enter your email"
@@ -41,9 +74,10 @@ const Newsletter = () => {
               />
               <button
                 type="submit"
-                className="px-6 py-3 bg-primary text-primary-foreground rounded-lg font-medium hover:bg-primary/90 transition-all duration-200 hover:scale-105 shadow-md whitespace-nowrap"
+                disabled={isSubmitting}
+                className="px-6 py-3 bg-primary text-primary-foreground rounded-lg font-medium hover:bg-primary/90 transition-all duration-200 hover:scale-105 shadow-md whitespace-nowrap disabled:opacity-50 disabled:cursor-not-allowed"
               >
-                Join Community
+                {isSubmitting ? 'Joining...' : 'Join Community'}
               </button>
             </form>
           </div>
