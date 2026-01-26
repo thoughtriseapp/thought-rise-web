@@ -14,50 +14,33 @@ const Hero = () => {
       <div className="absolute bottom-20 left-10 w-48 h-48 bg-primary/20 blob-shape blur-2xl" />
 
       <div className="container-narrow mx-auto pt-24 pb-16 relative z-10">
-        <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
-          {/* Left side - iPhone Mockup */}
-          <motion.div
-            initial={{ opacity: 0, x: -50 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.8, delay: 0.2 }}
-            className="relative order-2 lg:order-1 flex justify-center"
-          >
-            <div className="relative">
-              {/* Decorative circle behind phone */}
-              <div className="absolute inset-0 -m-8 bg-gradient-to-br from-accent/40 to-secondary/60 rounded-full blur-sm" />
-              <img
-                src={iphoneMockup}
-                alt="ThoughtRise App on iPhone"
-                className="relative z-10 w-64 md:w-80 lg:w-96 drop-shadow-2xl animate-float"
-              />
-            </div>
-          </motion.div>
-
-          {/* Right side - Content */}
+        <div className="flex flex-col lg:grid lg:grid-cols-2 gap-8 lg:gap-16 items-center">
+          {/* Headline - order 1 on mobile */}
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
-            className="order-1 lg:order-2 text-center lg:text-left"
+            className="order-1 lg:order-2 text-center lg:text-left w-full"
           >
-            <h1 className="font-serif text-4xl sm:text-5xl lg:text-6xl font-semibold text-foreground leading-tight tracking-wide">
+            <h1 className="font-serif text-5xl sm:text-5xl lg:text-6xl font-semibold text-foreground leading-tight tracking-wide">
               Elevate Your Days,
               <br />
               <span className="text-primary">Transform Your</span>
               <br />
               Mornings.
             </h1>
-            
-            <p className="mt-6 text-base md:text-lg text-muted-foreground max-w-xl mx-auto lg:mx-0 leading-relaxed">
+
+            {/* Description - desktop only */}
+            <p className="hidden lg:block mt-6 text-base md:text-lg text-muted-foreground max-w-xl leading-relaxed">
               ThoughtRise is a devotional app that helps you start your day with purpose and intent. With daily scripture-based motivation, this app pushes you to a specific mindset, a focused heart, and a productive day. Align your morning with God's Word and see the positive effects in your life.
             </p>
 
-            {/* App Store Buttons */}
+            {/* App Store Buttons - desktop only */}
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.4 }}
-              className="mt-8 flex flex-wrap gap-4 justify-center lg:justify-start"
+              className="hidden lg:flex mt-8 flex-wrap gap-4"
             >
               <a
                 href="https://apps.apple.com/us/app/thought-rise/id6741752730"
@@ -84,6 +67,69 @@ const Hero = () => {
                 />
               </a>
             </motion.div>
+          </motion.div>
+
+          {/* App Store Buttons - mobile only, order 2 */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.4 }}
+            className="flex lg:hidden order-2 flex-wrap gap-4 justify-center"
+          >
+            <a
+              href="https://apps.apple.com/us/app/thought-rise/id6741752730"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="transition-transform duration-200 hover:scale-105"
+            >
+              <img 
+                src={appStoreBadge} 
+                alt="Download on the App Store" 
+                className="h-12 w-auto"
+              />
+            </a>
+            <a
+              href="https://play.google.com/store/apps/details?id=com.thoughtrise.mobile.app&pcampaignid=web_share"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="transition-transform duration-200 hover:scale-105"
+            >
+              <img 
+                src={googlePlayBadge} 
+                alt="Get it on Google Play" 
+                className="h-12 w-auto"
+              />
+            </a>
+          </motion.div>
+
+          {/* iPhone Mockup - order 3 on mobile, order 1 on desktop */}
+          <motion.div
+            initial={{ opacity: 0, x: -50 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.8, delay: 0.2 }}
+            className="relative order-3 lg:order-1 flex justify-center"
+          >
+            <div className="relative">
+              {/* Decorative circle behind phone */}
+              <div className="absolute inset-0 -m-8 bg-gradient-to-br from-accent/40 to-secondary/60 rounded-full blur-sm" />
+              <img
+                src={iphoneMockup}
+                alt="ThoughtRise App on iPhone"
+                className="relative z-10 w-64 md:w-80 lg:w-96 drop-shadow-2xl animate-float"
+              />
+            </div>
+          </motion.div>
+
+          {/* Description - mobile only, order 4 */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.5 }}
+            className="order-4 lg:hidden text-center"
+          >
+            <p className="text-base text-muted-foreground max-w-xl mx-auto leading-relaxed">
+              ThoughtRise is a devotional app that helps you start your day with purpose and intent. With daily scripture-based motivation, this app pushes you to a specific mindset, a focused heart, and a productive day. Align your morning with God's Word and see the positive effects in your life.
+            </p>
           </motion.div>
         </div>
       </div>
