@@ -64,7 +64,7 @@ const Features = () => {
                   <img src={feature.image} alt={feature.title} className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" />
                 </div>
                 {/* Number badge */}
-                <span className="absolute top-2 right-2 w-12 h-12 flex items-center justify-center bg-primary/70 text-primary-foreground text-base font-semibold rounded-full shadow-lg">
+                <span className="absolute top-2 right-2 w-12 h-12 flex items-center justify-center bg-primary/85 text-primary-foreground text-base font-semibold rounded-full shadow-lg">
                   {feature.number}
                 </span>
               </div>
