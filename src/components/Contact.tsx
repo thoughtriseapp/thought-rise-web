@@ -40,14 +40,6 @@ const Contact = () => {
             </a>
           </div>
 
-          <div className="text-center">
-            <p className="font-heading text-2xl text-primary font-semibold mb-2">
-              We're here to help!
-            </p>
-            <p className="text-muted-foreground leading-relaxed max-w-md mx-auto">
-              Whether you have questions about the app, want to share feedback, or just want to say hello—reach out anytime. We typically respond within 24-48 hours.
-            </p>
-          </div>
         </motion.div>
       </div>
     </section>
