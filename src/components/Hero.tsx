@@ -4,36 +4,39 @@ import appStoreBadge from '@/assets/app-store-badge.avif';
 import googlePlayBadge from '@/assets/google-play-badge.avif';
 const Hero = () => {
   return <section id="home" className="relative min-h-screen flex items-center overflow-hidden">
-      {/* Background gradient - enhanced visibility */}
-      <div className="absolute inset-0 bg-gradient-to-br from-accent/40 via-secondary/30 to-primary/20" />
+      {/* Base background */}
+      <div className="absolute inset-0 bg-gradient-to-br from-secondary/50 via-background to-accent/20" />
       
-      {/* Decorative floating blob shapes */}
+      {/* Flowing ambient blobs - large, soft, spanning entire section */}
       <motion.div 
         animate={{ 
-          x: [0, 15, -10, 0],
-          y: [0, -20, 10, 0],
-          scale: [1, 1.1, 0.95, 1]
+          x: [0, 100, -50, 0],
+          y: [0, -80, 40, 0],
+          scale: [1, 1.3, 0.9, 1],
+          borderRadius: ["60% 40% 30% 70% / 60% 30% 70% 40%", "30% 60% 70% 40% / 50% 60% 30% 60%", "50% 50% 40% 60% / 40% 50% 60% 50%", "60% 40% 30% 70% / 60% 30% 70% 40%"]
         }}
-        transition={{ duration: 8, repeat: Infinity, ease: "easeInOut" }}
-        className="absolute top-20 right-10 w-72 h-72 bg-accent/25 blob-shape blur-3xl" 
+        transition={{ duration: 20, repeat: Infinity, ease: "easeInOut" }}
+        className="absolute -top-1/4 -left-1/4 w-[80vw] h-[80vh] bg-accent/20 blur-[100px]" 
       />
       <motion.div 
         animate={{ 
-          x: [0, -20, 15, 0],
-          y: [0, 15, -10, 0],
-          scale: [1, 0.9, 1.1, 1]
+          x: [0, -80, 60, 0],
+          y: [0, 60, -40, 0],
+          scale: [1, 0.85, 1.2, 1],
+          borderRadius: ["40% 60% 70% 30% / 40% 50% 60% 50%", "60% 40% 30% 70% / 60% 30% 70% 40%", "30% 70% 50% 50% / 50% 40% 60% 50%", "40% 60% 70% 30% / 40% 50% 60% 50%"]
         }}
-        transition={{ duration: 10, repeat: Infinity, ease: "easeInOut", delay: 1 }}
-        className="absolute bottom-20 left-10 w-56 h-56 bg-primary/15 blob-shape blur-2xl" 
+        transition={{ duration: 25, repeat: Infinity, ease: "easeInOut", delay: 3 }}
+        className="absolute -bottom-1/4 -right-1/4 w-[70vw] h-[70vh] bg-primary/15 blur-[120px]" 
       />
       <motion.div 
         animate={{ 
-          x: [0, 10, -15, 0],
-          y: [0, -15, 20, 0],
-          scale: [1, 1.05, 0.95, 1]
+          x: [0, 50, -70, 0],
+          y: [0, -50, 30, 0],
+          scale: [1, 1.15, 0.95, 1],
+          borderRadius: ["50% 50% 40% 60% / 40% 60% 40% 60%", "40% 60% 60% 40% / 60% 40% 60% 40%", "60% 40% 50% 50% / 50% 50% 50% 50%", "50% 50% 40% 60% / 40% 60% 40% 60%"]
         }}
-        transition={{ duration: 12, repeat: Infinity, ease: "easeInOut", delay: 2 }}
-        className="absolute top-1/2 left-1/4 w-40 h-40 bg-highlight/10 blob-shape blur-2xl" 
+        transition={{ duration: 18, repeat: Infinity, ease: "easeInOut", delay: 6 }}
+        className="absolute top-1/3 left-1/3 w-[50vw] h-[50vh] bg-highlight/8 blur-[80px]" 
       />
 
       <div className="container-narrow mx-auto pt-24 pb-16 relative z-10">
