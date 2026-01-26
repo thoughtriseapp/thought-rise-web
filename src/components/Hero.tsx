@@ -70,7 +70,7 @@ const Hero = () => {
         className="absolute bottom-0 -left-1/4 w-[50vw] h-[40vh] bg-secondary/50 blur-[90px]" 
       />
 
-      <div className="container-narrow mx-auto pt-24 pb-16 relative z-10">
+      <div className="container-narrow mx-auto pt-24 pb-8 relative z-10">
         <div className="flex flex-col lg:grid lg:grid-cols-2 gap-6 lg:gap-12 items-center">
           {/* Headline - order 1 on mobile */}
           <motion.div initial={{
@@ -164,12 +164,10 @@ const Hero = () => {
             </p>
           </motion.div>
         </div>
-      </div>
 
-      {/* Value Props Strip */}
-      <div className="absolute bottom-0 left-0 right-0 bg-background/80 backdrop-blur-sm border-t border-border/30">
-        <div className="container-narrow mx-auto py-8">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
+        {/* Value Props Strip - flows naturally after hero content */}
+        <div className="mt-16 mb-8 py-10 bg-background/80 backdrop-blur-sm rounded-2xl border border-border/30">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12 px-6 md:px-12">
             {valueProps.map((prop, index) => {
               const Icon = prop.icon;
               return (
@@ -180,10 +178,10 @@ const Hero = () => {
                   transition={{ duration: 0.5, delay: 0.6 + index * 0.2 }}
                   className="flex flex-col items-center text-center"
                 >
-                  <div className="w-12 h-12 rounded-full bg-primary/20 flex items-center justify-center mb-3">
-                    <Icon className="w-6 h-6 text-primary" />
+                  <div className="w-14 h-14 rounded-full bg-primary/20 flex items-center justify-center mb-4">
+                    <Icon className="w-7 h-7 text-primary" />
                   </div>
-                  <h3 className="font-serif text-lg font-semibold text-foreground tracking-wide mb-1">
+                  <h3 className="font-serif text-lg font-semibold text-foreground tracking-wide mb-2">
                     {prop.title}
                   </h3>
                   <p className="text-sm text-muted-foreground">
