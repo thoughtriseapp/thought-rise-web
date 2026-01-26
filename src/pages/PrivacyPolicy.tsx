@@ -18,7 +18,7 @@ const PrivacyPolicy = () => {
               Privacy Policy
             </h1>
             <p className="text-muted-foreground text-center mb-12">
-              Last Updated: January 2026
+              Last Updated: 3/9/2025
             </p>
 
             <div className="prose prose-lg max-w-4xl mx-auto space-y-8 text-foreground">
@@ -27,7 +27,7 @@ const PrivacyPolicy = () => {
                   1. Introduction
                 </h2>
                 <p className="text-muted-foreground leading-relaxed">
-                  Welcome to ThoughtRise App. We value your privacy and are committed to protecting your personal information. This Privacy Policy outlines how we collect, use, and safeguard your data when you use our application.
+                  Welcome to ThoughtriseApp. We value your privacy and are committed to protecting your personal information. This Privacy Policy outlines how we collect, use, and safeguard your data when you use our application.
                 </p>
               </section>
 
@@ -38,7 +38,7 @@ const PrivacyPolicy = () => {
                 <ul className="space-y-3 text-muted-foreground">
                   <li className="flex gap-2">
                     <span className="text-primary font-bold">•</span>
-                    <span><strong>Personal Data:</strong> Information that identifies you personally, such as your name, email address, and phone number, which you provide during registration or through app interactions.</span>
+                    <span><strong>Personal Data:</strong> Information that identifies you personally, such as your name, email address, and phone number, which you provide during account creation or through app interactions.</span>
                   </li>
                   <li className="flex gap-2">
                     <span className="text-primary font-bold">•</span>
@@ -81,7 +81,7 @@ const PrivacyPolicy = () => {
                   </li>
                   <li className="flex gap-2">
                     <span className="text-primary font-bold">•</span>
-                    <span>Monitor and usage to detect and prevent technical issues.</span>
+                    <span>Monitor app usage to detect and prevent technical issues.</span>
                   </li>
                 </ul>
               </section>
@@ -110,7 +110,7 @@ const PrivacyPolicy = () => {
                   5. Data Security
                 </h2>
                 <p className="text-muted-foreground leading-relaxed">
-                  We implement appropriate security measures to protect your personal information. However, no method of transmission over the Internet or electronic storage is 100% secure.
+                  We implement appropriate security measures to protect your personal information. However, no method of transmission over the internet or electronic storage is 100% secure.
                 </p>
               </section>
 
@@ -175,7 +175,7 @@ const PrivacyPolicy = () => {
                   If you have questions about this Privacy Policy, please contact us at:
                 </p>
                 <div className="bg-secondary/50 rounded-lg p-6 text-muted-foreground">
-                  <p><strong>ThoughtRise App</strong></p>
+                  <p><strong>Thought Rise App</strong></p>
                   <p>Owners: Julie Kern and Brianna Collins</p>
                   <p>Email: <a href="mailto:hello@thoughtriseapp.com" className="text-primary hover:underline">hello@thoughtriseapp.com</a></p>
                 </div>
@@ -204,7 +204,7 @@ const PrivacyPolicy = () => {
                   12. Consent
                 </h2>
                 <p className="text-muted-foreground leading-relaxed">
-                  By using ThoughtRise App, you consent to our Privacy Policy.
+                  By using ThoughtriseApp, you consent to our Privacy Policy.
                 </p>
               </section>
 
@@ -222,7 +222,7 @@ const PrivacyPolicy = () => {
                   14. Acknowledgment
                 </h2>
                 <p className="text-muted-foreground leading-relaxed">
-                  By using our app, you acknowledge that you have read and understand this Privacy Policy.
+                  By using our app, you acknowledge that you have read and understood this Privacy Policy.
                 </p>
               </section>
 
@@ -240,7 +240,7 @@ const PrivacyPolicy = () => {
                   16. Effective Date
                 </h2>
                 <p className="text-muted-foreground leading-relaxed">
-                  This Privacy Policy is effective as of January 2026.
+                  This Privacy Policy is effective as of 3/9/2025.
                 </p>
               </section>
 
@@ -255,7 +255,7 @@ const PrivacyPolicy = () => {
 
               <section>
                 <h2 className="font-serif text-2xl font-semibold text-foreground mb-4">
-                  18. Analytics
+                  19. Analytics
                 </h2>
                 <p className="text-muted-foreground leading-relaxed">
                   We may use third-party service providers to monitor and analyze app usage to improve functionality and user experience.
@@ -264,34 +264,50 @@ const PrivacyPolicy = () => {
 
               <section>
                 <h2 className="font-serif text-2xl font-semibold text-foreground mb-4">
-                  19. Push Notifications
+                  21. Push Notifications
                 </h2>
+                <p className="text-muted-foreground leading-relaxed mb-3">
+                  Thought Rise may send you push notifications to remind you to listen to each day's audio. These notifications are intended to support your consistency and engagement with the app's daily content.
+                </p>
+                <p className="text-muted-foreground leading-relaxed mb-3">
+                  You can choose to opt out of receiving push notifications at any time by adjusting the notification settings on your mobile device. To manage these settings:
+                </p>
+                <ul className="space-y-2 text-muted-foreground mb-3">
+                  <li className="flex gap-2">
+                    <span className="text-primary font-bold">•</span>
+                    <span><strong>iOS users:</strong> Go to Settings {'>'} Notifications {'>'} Thought Rise and toggle notifications off.</span>
+                  </li>
+                  <li className="flex gap-2">
+                    <span className="text-primary font-bold">•</span>
+                    <span><strong>Android users:</strong> Go to Settings {'>'} Apps {'>'} Thought Rise {'>'} Notifications and adjust your preferences.</span>
+                  </li>
+                </ul>
                 <p className="text-muted-foreground leading-relaxed">
-                  ThoughtRise may send you push notifications to remind you to listen to each day's audio. These notifications are intended to support your consistency and engagement with the app's daily content. You can choose to opt out of receiving push notifications at any time by adjusting the notification settings on your mobile device.
+                  Please note that turning off notifications may result in missing helpful reminders to stay on track with your daily routine.
                 </p>
               </section>
 
               <section>
                 <h2 className="font-serif text-2xl font-semibold text-foreground mb-4">
-                  20. In-App Purchases
+                  22. In-App Purchases
                 </h2>
                 <p className="text-muted-foreground leading-relaxed">
-                  If our app offers in-app purchases, this section will explain the process and how user payment information is handled.
+                  If your app offers in-app purchases, explain the process and how user payment information is handled.
                 </p>
               </section>
 
               <section>
                 <h2 className="font-serif text-2xl font-semibold text-foreground mb-4">
-                  21. Social Media Integration
+                  23. Social Media Integration
                 </h2>
                 <p className="text-muted-foreground leading-relaxed">
-                  If our app integrates with social media platforms, this section will explain how user data is shared in this context.
+                  If your app integrates with social media platforms, explain how user data is shared and used in this context.
                 </p>
               </section>
 
               <section>
                 <h2 className="font-serif text-2xl font-semibold text-foreground mb-4">
-                  22. Compliance with Laws
+                  24. Compliance with Laws
                 </h2>
                 <p className="text-muted-foreground leading-relaxed">
                   We will disclose your personal data where required to do so by law or subpoena.
@@ -300,7 +316,7 @@ const PrivacyPolicy = () => {
 
               <section>
                 <h2 className="font-serif text-2xl font-semibold text-foreground mb-4">
-                  23. Changes to This Privacy Policy
+                  25. Changes to This Privacy Policy
                 </h2>
                 <p className="text-muted-foreground leading-relaxed">
                   We may update our Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page.
@@ -309,7 +325,7 @@ const PrivacyPolicy = () => {
 
               <section>
                 <h2 className="font-serif text-2xl font-semibold text-foreground mb-4">
-                  24. Contact Information
+                  26. Contact Information
                 </h2>
                 <p className="text-muted-foreground leading-relaxed">
                   If you have any questions about this Privacy Policy, please contact us by email: <a href="mailto:hello@thoughtriseapp.com" className="text-primary hover:underline">hello@thoughtriseapp.com</a>
