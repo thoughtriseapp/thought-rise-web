@@ -79,12 +79,20 @@ const Footer = () => {
         {/* Bottom Row */}
         <div className="flex flex-col sm:flex-row items-center justify-between gap-4 text-sm text-primary-foreground/60">
           <p>&copy; {new Date().getFullYear()} ThoughtRise. All rights reserved.</p>
-          <Link 
-            to="/privacy-policy" 
-            className="hover:text-primary-foreground transition-colors"
-          >
-            Privacy Policy
-          </Link>
+          <div className="flex gap-4">
+            <Link
+              to="/privacy-policy"
+              className="hover:text-primary-foreground transition-colors"
+            >
+              Privacy Policy
+            </Link>
+            <Link
+              to="/terms-and-conditions"
+              className="hover:text-primary-foreground transition-colors"
+            >
+              Terms & Conditions
+            </Link>
+          </div>
         </div>
       </div>
     </footer>
