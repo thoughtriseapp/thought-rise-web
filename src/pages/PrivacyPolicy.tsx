@@ -27,7 +27,7 @@ const PrivacyPolicy = () => {
                   1. Introduction
                 </h2>
                 <p className="text-muted-foreground leading-relaxed">
-                  Welcome to ThoughtriseApp. We value your privacy and are committed to protecting your personal information. This Privacy Policy outlines how we collect, use, and safeguard your data when you use our application.
+                  Welcome to Thought Rise App. We value your privacy and are committed to protecting your personal information. This Privacy Policy outlines how we collect, use, and safeguard your data when you use our application.
                 </p>
               </section>
 
@@ -204,7 +204,7 @@ const PrivacyPolicy = () => {
                   12. Consent
                 </h2>
                 <p className="text-muted-foreground leading-relaxed">
-                  By using ThoughtriseApp, you consent to our Privacy Policy.
+                  By using Thought Rise App, you consent to our Privacy Policy.
                 </p>
               </section>
 

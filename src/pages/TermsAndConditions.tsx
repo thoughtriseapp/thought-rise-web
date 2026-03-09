@@ -27,7 +27,7 @@ const TermsAndConditions = () => {
                   1. Agreement to Terms
                 </h2>
                 <p className="text-muted-foreground leading-relaxed">
-                  By accessing or using ThoughtriseApp ("the App"), you agree to be bound by these Terms and Conditions. If you do not agree to these terms, please do not use the App.
+                  By accessing or using Thought Rise App ("the App"), you agree to be bound by these Terms and Conditions. If you do not agree to these terms, please do not use the App.
                 </p>
               </section>
 
@@ -36,7 +36,7 @@ const TermsAndConditions = () => {
                   2. Description of Service
                 </h2>
                 <p className="text-muted-foreground leading-relaxed">
-                  ThoughtriseApp provides daily audio content designed to support personal growth and well-being. The App delivers guided sessions that users can listen to as part of their daily routine.
+                  Thought Rise App provides daily audio content designed to support personal growth and well-being. The App delivers guided sessions that users can listen to as part of their daily routine.
                 </p>
               </section>
 
@@ -142,7 +142,7 @@ const TermsAndConditions = () => {
                   8. Health Disclaimer
                 </h2>
                 <p className="text-muted-foreground leading-relaxed">
-                  The content provided in ThoughtriseApp is for informational and personal development purposes only. It is not intended to be a substitute for professional medical advice, diagnosis, or treatment. Always seek the advice of your physician or other qualified health provider with any questions you may have regarding a medical condition.
+                  The content provided in Thought Rise App is for informational and personal development purposes only. It is not intended to be a substitute for professional medical advice, diagnosis, or treatment. Always seek the advice of your physician or other qualified health provider with any questions you may have regarding a medical condition.
                 </p>
               </section>
 
