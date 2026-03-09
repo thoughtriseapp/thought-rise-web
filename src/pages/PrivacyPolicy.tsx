@@ -255,7 +255,7 @@ const PrivacyPolicy = () => {
 
               <section>
                 <h2 className="font-serif text-2xl font-semibold text-foreground mb-4">
-                  19. Analytics
+                  18. Analytics
                 </h2>
                 <p className="text-muted-foreground leading-relaxed">
                   We may use third-party service providers to monitor and analyze app usage to improve functionality and user experience.
@@ -264,7 +264,7 @@ const PrivacyPolicy = () => {
 
               <section>
                 <h2 className="font-serif text-2xl font-semibold text-foreground mb-4">
-                  21. Push Notifications
+                  19. Push Notifications
                 </h2>
                 <p className="text-muted-foreground leading-relaxed mb-3">
                   Thought Rise may send you push notifications to remind you to listen to each day's audio. These notifications are intended to support your consistency and engagement with the app's daily content.
@@ -289,49 +289,23 @@ const PrivacyPolicy = () => {
 
               <section>
                 <h2 className="font-serif text-2xl font-semibold text-foreground mb-4">
-                  22. In-App Purchases
+                  20. Donations
                 </h2>
                 <p className="text-muted-foreground leading-relaxed">
-                  If your app offers in-app purchases, explain the process and how user payment information is handled.
+                  If you choose to make a donation to support Thought Rise, payment is processed through Apple's App Store or Google Play Store payment systems. We do not collect or store your payment card information.
                 </p>
               </section>
 
               <section>
                 <h2 className="font-serif text-2xl font-semibold text-foreground mb-4">
-                  23. Social Media Integration
-                </h2>
-                <p className="text-muted-foreground leading-relaxed">
-                  If your app integrates with social media platforms, explain how user data is shared and used in this context.
-                </p>
-              </section>
-
-              <section>
-                <h2 className="font-serif text-2xl font-semibold text-foreground mb-4">
-                  24. Compliance with Laws
+                  21. Compliance with Laws
                 </h2>
                 <p className="text-muted-foreground leading-relaxed">
                   We will disclose your personal data where required to do so by law or subpoena.
                 </p>
               </section>
 
-              <section>
-                <h2 className="font-serif text-2xl font-semibold text-foreground mb-4">
-                  25. Changes to This Privacy Policy
-                </h2>
-                <p className="text-muted-foreground leading-relaxed">
-                  We may update our Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page.
-                </p>
-              </section>
-
-              <section>
-                <h2 className="font-serif text-2xl font-semibold text-foreground mb-4">
-                  26. Contact Information
-                </h2>
-                <p className="text-muted-foreground leading-relaxed">
-                  If you have any questions about this Privacy Policy, please contact us by email: <a href="mailto:hello@thoughtriseapp.com" className="text-primary hover:underline">hello@thoughtriseapp.com</a>
-                </p>
-              </section>
-            </div>
+                          </div>
           </motion.div>
         </div>
       </main>

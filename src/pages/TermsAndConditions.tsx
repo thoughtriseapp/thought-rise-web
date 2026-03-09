@@ -106,24 +106,24 @@ const TermsAndConditions = () => {
 
               <section>
                 <h2 className="font-serif text-2xl font-semibold text-foreground mb-4">
-                  6. Subscriptions and Payments
+                  6. Donations
                 </h2>
                 <ul className="space-y-3 text-muted-foreground">
                   <li className="flex gap-2">
                     <span className="text-primary font-bold">•</span>
-                    <span>Some features of the App may require a paid subscription.</span>
+                    <span>The App is free to use. You may choose to support Thought Rise through voluntary donations.</span>
                   </li>
                   <li className="flex gap-2">
                     <span className="text-primary font-bold">•</span>
-                    <span>Subscriptions automatically renew unless canceled before the renewal date.</span>
+                    <span>Donations are processed through the App Store or Google Play Store.</span>
                   </li>
                   <li className="flex gap-2">
                     <span className="text-primary font-bold">•</span>
-                    <span>Payments are processed through the App Store or Google Play Store.</span>
+                    <span>Donations are non-refundable unless required by applicable law.</span>
                   </li>
                   <li className="flex gap-2">
                     <span className="text-primary font-bold">•</span>
-                    <span>Refunds are subject to the respective app store's refund policies.</span>
+                    <span>Donations do not unlock additional features; they simply support the continued development of the App.</span>
                   </li>
                 </ul>
               </section>
