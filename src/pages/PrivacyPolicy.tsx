@@ -258,7 +258,7 @@ const PrivacyPolicy = () => {
                   18. Analytics
                 </h2>
                 <p className="text-muted-foreground leading-relaxed">
-                  We may use third-party service providers to monitor and analyze app usage to improve functionality and user experience.
+                  We use Firebase Analytics, a service provided by Google, to understand how users interact with the App. This service may collect device information, app usage patterns, and crash data to help us improve performance and user experience. For more information on how Google uses data, visit: <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">Google Privacy Policy</a>.
                 </p>
               </section>
 
