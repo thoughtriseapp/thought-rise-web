@@ -18,7 +18,7 @@ const PrivacyPolicy = () => {
               Privacy Policy
             </h1>
             <p className="text-muted-foreground text-center mb-12">
-              Last Updated: 3/9/2025
+              Last Updated: 3/9/2026
             </p>
 
             <div className="prose prose-lg max-w-4xl mx-auto space-y-8 text-foreground">
@@ -240,7 +240,7 @@ const PrivacyPolicy = () => {
                   16. Effective Date
                 </h2>
                 <p className="text-muted-foreground leading-relaxed">
-                  This Privacy Policy is effective as of 3/9/2025.
+                  This Privacy Policy is effective as of 3/9/2026.
                 </p>
               </section>
 
