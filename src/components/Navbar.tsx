@@ -15,7 +15,7 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const location = useLocation();
-  const isPrivacyPage = location.pathname === '/privacy-policy';
+  const isSubPage = location.pathname === '/privacy-policy' || location.pathname === '/terms-and-conditions';
 
   useEffect(() => {
     const handleScroll = () => {
@@ -27,7 +27,7 @@ const Navbar = () => {
 
   const handleNavClick = (href: string) => {
     setIsOpen(false);
-    if (isPrivacyPage) {
+    if (isSubPage) {
       window.location.href = '/' + href;
     }
   };
@@ -35,7 +35,7 @@ const Navbar = () => {
   return (
     <nav
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        scrolled || isPrivacyPage
+        scrolled || isSubPage
           ? 'bg-primary/80 backdrop-blur-md shadow-sm'
           : 'bg-transparent'
       }`}
@@ -56,17 +56,17 @@ const Navbar = () => {
             {navLinks.map((link) => (
               <a
                 key={link.name}
-                href={isPrivacyPage ? `/${link.href}` : link.href}
+                href={isSubPage ? `/${link.href}` : link.href}
                 onClick={() => handleNavClick(link.href)}
                 className={`text-sm font-medium transition-colors duration-200 relative group ${
-                  scrolled || isPrivacyPage
+                  scrolled || isSubPage
                     ? 'text-primary-foreground/90 hover:text-primary-foreground'
                     : 'text-foreground/80 hover:text-primary'
                 }`}
               >
                 {link.name}
                 <span className={`absolute -bottom-1 left-0 w-0 h-0.5 transition-all duration-300 group-hover:w-full ${
-                  scrolled || isPrivacyPage ? 'bg-primary-foreground' : 'bg-primary'
+                  scrolled || isSubPage ? 'bg-primary-foreground' : 'bg-primary'
                 }`} />
               </a>
             ))}
@@ -76,7 +76,7 @@ const Navbar = () => {
           <button
             onClick={() => setIsOpen(!isOpen)}
             className={`md:hidden p-2 transition-colors ${
-              scrolled || isPrivacyPage
+              scrolled || isSubPage
                 ? 'text-primary-foreground/90 hover:text-primary-foreground'
                 : 'text-foreground/80 hover:text-primary'
             }`}
@@ -96,7 +96,7 @@ const Navbar = () => {
             {navLinks.map((link) => (
               <a
                 key={link.name}
-                href={isPrivacyPage ? `/${link.href}` : link.href}
+                href={isSubPage ? `/${link.href}` : link.href}
                 onClick={() => handleNavClick(link.href)}
                 className="text-sm font-medium text-foreground/80 hover:text-primary transition-colors duration-200 px-2 py-1"
               >
