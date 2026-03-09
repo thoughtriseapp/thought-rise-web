@@ -6,7 +6,7 @@ import howItWorks3 from '@/assets/how-it-works-3.jpg';
 const features = [{
   number: '01',
   title: 'Daily Motivation',
-  description: 'Start each day with curated motivational content. Uplifting messages, affirmations, and inspirational quotes tailored to your preferences.',
+  description: 'Start each day with thoughtfully curated content. Uplifting messages, affirmations, and inspirational quotes tailored to your preferences.',
   image: howItWorks1
 }, {
   number: '02',
