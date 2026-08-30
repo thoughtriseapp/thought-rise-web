@@ -51,13 +51,13 @@ const About = () => {
           >
             <div className="space-y-4 text-muted-foreground leading-relaxed">
               <p>
-                Hello! We're Julie Kern and Brianna Collins, a mother-daughter team with a shared passion for faith, personal growth, and helping others rise to their fullest potential. With backgrounds spanning ministry, entrepreneurship, and creative development, we've combined our unique gifts to create ThoughtRise.
+                Hello! We're Julie Kern and Brianna Collins, a mother-daughter team with a shared passion for faith, personal growth, and helping others rise to their fullest potential. With backgrounds spanning ministry, entrepreneurship, and creative development, we've combined our unique gifts to create Thought Rise.
               </p>
               <p>
                 Our app was born from our own morning routines—practices that transformed how we approach each day. We believe that when you start your morning with intention, scripture, and gratitude, you set the stage for a life of purpose and joy.
               </p>
               <p>
-                ThoughtRise is more than an app; it's an extension of our hearts. We're here to walk alongside you, providing daily encouragement and tools to help you grow spiritually, mentally, and emotionally. Welcome to the ThoughtRise family!
+                Thought Rise is more than an app; it's an extension of our hearts. We're here to walk alongside you, providing daily encouragement and tools to help you grow spiritually, mentally, and emotionally. Welcome to the Thought Rise family!
               </p>
             </div>
           </motion.div>
