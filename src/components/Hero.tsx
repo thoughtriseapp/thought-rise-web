@@ -31,7 +31,10 @@ const Hero = () => {
               <a href="https://apps.apple.com/us/app/thought-rise/id6741752730" target="_blank" rel="noopener noreferrer" className="transition-transform duration-200 hover:scale-105"><img src={appStoreBadge} alt="Download Thought Rise on the App Store" className="h-12 md:h-14 w-auto" /></a>
               <a href="https://play.google.com/store/apps/details?id=com.thoughtrise.mobile.app&pcampaignid=web_share" target="_blank" rel="noopener noreferrer" className="transition-transform duration-200 hover:scale-105"><img src={googlePlayBadge} alt="Get Thought Rise on Google Play" className="h-12 md:h-14 w-auto" /></a>
             </div>
-            <p className="mt-4 text-sm text-muted-foreground">Free to download.</p>
+            <div className="mt-5 inline-flex flex-wrap justify-center lg:justify-start items-center gap-x-2 gap-y-1 text-sm font-medium text-foreground/75">
+              <span>100% free</span><span aria-hidden="true">•</span><span>No ads</span><span aria-hidden="true">•</span><span>No in-app purchases</span>
+            </div>
+            <p className="mt-2 text-xs text-muted-foreground">Supported by optional donations.</p>
           </motion.div>
         </div>
       </div>
