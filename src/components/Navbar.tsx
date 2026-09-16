@@ -5,9 +5,8 @@ import logo from '@/assets/thought-rise-logo.avif';
 
 const navLinks = [
   { name: 'Home', href: '#home' },
-  { name: 'Features', href: '#features' },
-  { name: 'Research', href: '#research' },
-  { name: 'About Us', href: '#about' },
+  { name: 'The Experience', href: '#features' },
+  { name: 'Our Story', href: '#about' },
   { name: 'Contact', href: '#contact' },
 ];
 
@@ -18,91 +17,33 @@ const Navbar = () => {
   const isSubPage = location.pathname === '/privacy-policy' || location.pathname === '/terms-and-conditions';
 
   useEffect(() => {
-    const handleScroll = () => {
-      setScrolled(window.scrollY > 50);
-    };
+    const handleScroll = () => setScrolled(window.scrollY > 50);
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
   const handleNavClick = (href: string) => {
     setIsOpen(false);
-    if (isSubPage) {
-      window.location.href = '/' + href;
-    }
+    if (isSubPage) window.location.href = '/' + href;
   };
 
   return (
-    <nav
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        scrolled || isSubPage
-          ? 'bg-primary/80 backdrop-blur-md shadow-sm'
-          : 'bg-transparent'
-      }`}
-    >
+    <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${scrolled || isSubPage ? 'bg-primary/80 backdrop-blur-md shadow-sm' : 'bg-transparent'}`}>
       <div className="container-narrow mx-auto">
         <div className="flex items-center justify-between h-16 md:h-20">
-          {/* Logo */}
-          <Link to="/" className="flex items-center">
-            <img 
-              src={logo} 
-              alt="Thought Rise" 
-              className="h-10 md:h-12 w-auto"
-            />
-          </Link>
-
-          {/* Desktop Navigation */}
+          <Link to="/" className="flex items-center"><img src={logo} alt="Thought Rise" className="h-10 md:h-12 w-auto" /></Link>
           <div className="hidden md:flex items-center space-x-8">
             {navLinks.map((link) => (
-              <a
-                key={link.name}
-                href={isSubPage ? `/${link.href}` : link.href}
-                onClick={() => handleNavClick(link.href)}
-                className={`text-sm font-medium transition-colors duration-200 relative group ${
-                  scrolled || isSubPage
-                    ? 'text-primary-foreground/90 hover:text-primary-foreground'
-                    : 'text-foreground/80 hover:text-primary'
-                }`}
-              >
-                {link.name}
-                <span className={`absolute -bottom-1 left-0 w-0 h-0.5 transition-all duration-300 group-hover:w-full ${
-                  scrolled || isSubPage ? 'bg-primary-foreground' : 'bg-primary'
-                }`} />
+              <a key={link.name} href={isSubPage ? `/${link.href}` : link.href} onClick={() => handleNavClick(link.href)} className={`text-sm font-medium transition-colors duration-200 relative group ${scrolled || isSubPage ? 'text-primary-foreground/90 hover:text-primary-foreground' : 'text-foreground/80 hover:text-primary'}`}>
+                {link.name}<span className={`absolute -bottom-1 left-0 w-0 h-0.5 transition-all duration-300 group-hover:w-full ${scrolled || isSubPage ? 'bg-primary-foreground' : 'bg-primary'}`} />
               </a>
             ))}
           </div>
-
-          {/* Mobile Menu Button */}
-          <button
-            onClick={() => setIsOpen(!isOpen)}
-            className={`md:hidden p-2 transition-colors ${
-              scrolled || isSubPage
-                ? 'text-primary-foreground/90 hover:text-primary-foreground'
-                : 'text-foreground/80 hover:text-primary'
-            }`}
-            aria-label="Toggle menu"
-          >
-            {isOpen ? <X size={24} /> : <Menu size={24} />}
-          </button>
+          <button onClick={() => setIsOpen(!isOpen)} className={`md:hidden p-2 transition-colors ${scrolled || isSubPage ? 'text-primary-foreground/90 hover:text-primary-foreground' : 'text-foreground/80 hover:text-primary'}`} aria-label="Toggle menu">{isOpen ? <X size={24} /> : <Menu size={24} />}</button>
         </div>
-
-        {/* Mobile Navigation */}
-        <div
-          className={`md:hidden overflow-hidden transition-all duration-300 ${
-            isOpen ? 'max-h-96' : 'max-h-0'
-          }`}
-        >
+        <div className={`md:hidden overflow-hidden transition-all duration-300 ${isOpen ? 'max-h-96' : 'max-h-0'}`}>
           <div className="flex flex-col space-y-4 py-4 px-2 bg-secondary/95 backdrop-blur-md rounded-lg mt-2 shadow-lg">
-            {navLinks.map((link) => (
-              <a
-                key={link.name}
-                href={isSubPage ? `/${link.href}` : link.href}
-                onClick={() => handleNavClick(link.href)}
-                className="text-sm font-medium text-foreground/80 hover:text-primary transition-colors duration-200 px-2 py-1"
-              >
-                {link.name}
-              </a>
-            ))}
+            {navLinks.map((link) => <a key={link.name} href={isSubPage ? `/${link.href}` : link.href} onClick={() => handleNavClick(link.href)} className="text-sm font-medium text-foreground/80 hover:text-primary transition-colors duration-200 px-2 py-1">{link.name}</a>)}
           </div>
         </div>
       </div>
