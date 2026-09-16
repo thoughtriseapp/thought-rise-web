@@ -20,12 +20,12 @@ const Hero = () => {
           </motion.div>
 
           <motion.div initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }} className="order-1 lg:order-2 text-center lg:text-left w-full">
-            <p className="text-primary font-semibold tracking-widest uppercase text-sm mb-4">A personalized, Scripture-centered way to start your day with God</p>
+            <p className="text-primary font-semibold tracking-widest uppercase text-sm mb-4">A personalized, Scripture-centered way to start your day with Jesus</p>
             <h1 className="font-heading font-semibold leading-tight tracking-wide text-foreground text-4xl sm:text-5xl lg:text-6xl">
               Start your day with something <span className="text-primary">made for you.</span>
             </h1>
             <p className="mt-6 text-base md:text-lg text-muted-foreground max-w-xl leading-relaxed mx-auto lg:mx-0">
-              Thought Rise helps you begin each morning with God through Scripture, prayer, and a personalized experience created to encourage you for the day ahead.
+              Thought Rise helps you begin each morning with Jesus through Scripture, prayer, and a personalized experience created to encourage you for the day ahead.
             </p>
             <div className="mt-8 flex flex-wrap gap-4 justify-center lg:justify-start">
               <a href="https://apps.apple.com/us/app/thought-rise/id6741752730" target="_blank" rel="noopener noreferrer" className="transition-transform duration-200 hover:scale-105"><img src={appStoreBadge} alt="Download Thought Rise on the App Store" className="h-12 md:h-14 w-auto" /></a>
