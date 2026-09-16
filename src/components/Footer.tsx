@@ -17,9 +17,8 @@ const TikTokIcon = ({ className }: { className?: string }) => (
 
 const navLinks = [
   { name: 'Home', href: '#home' },
-  { name: 'Features', href: '#features' },
-  { name: 'Research', href: '#research' },
-  { name: 'About Us', href: '#about' },
+  { name: 'The Experience', href: '#features' },
+  { name: 'Our Story', href: '#about' },
   { name: 'Contact', href: '#contact' },
 ];
 
@@ -35,63 +34,33 @@ const Footer = () => {
   return (
     <footer className="bg-primary/70 py-12 md:py-16">
       <div className="container-narrow mx-auto">
-        {/* Logo */}
         <div className="flex justify-center mb-8">
-          <img 
-            src={logo} 
-            alt="Thought Rise" 
-            className="h-16 md:h-20 w-auto"
-          />
+          <img src={logo} alt="Thought Rise" className="h-16 md:h-20 w-auto" />
         </div>
 
-        {/* Navigation */}
         <nav className="flex flex-wrap justify-center gap-4 md:gap-8 mb-8">
           {navLinks.map((link) => (
-            <a
-              key={link.name}
-              href={link.href}
-              className="text-sm text-primary-foreground/80 hover:text-primary-foreground transition-colors"
-            >
+            <a key={link.name} href={link.href} className="text-sm text-primary-foreground/80 hover:text-primary-foreground transition-colors">
               {link.name}
             </a>
           ))}
         </nav>
 
-        {/* Social Links */}
         <div className="flex justify-center gap-4 mb-8">
           {socialLinks.map((social) => (
-            <a
-              key={social.name}
-              href={social.href}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="w-10 h-10 rounded-full bg-primary-foreground/10 flex items-center justify-center hover:bg-primary-foreground/20 transition-colors"
-              aria-label={social.name}
-            >
+            <a key={social.name} href={social.href} target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-primary-foreground/10 flex items-center justify-center hover:bg-primary-foreground/20 transition-colors" aria-label={social.name}>
               <social.icon className="w-5 h-5 text-primary-foreground" />
             </a>
           ))}
         </div>
 
-        {/* Divider */}
         <div className="h-px bg-primary-foreground/20 mb-6" />
 
-        {/* Bottom Row */}
         <div className="flex flex-col sm:flex-row items-center justify-between gap-4 text-sm text-primary-foreground/60">
-          <p>&copy; {new Date().getFullYear()} ThoughtRise. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} Thought Rise. All rights reserved.</p>
           <div className="flex gap-4">
-            <Link
-              to="/privacy-policy"
-              className="hover:text-primary-foreground transition-colors"
-            >
-              Privacy Policy
-            </Link>
-            <Link
-              to="/terms-and-conditions"
-              className="hover:text-primary-foreground transition-colors"
-            >
-              Terms & Conditions
-            </Link>
+            <Link to="/privacy-policy" className="hover:text-primary-foreground transition-colors">Privacy Policy</Link>
+            <Link to="/terms-and-conditions" className="hover:text-primary-foreground transition-colors">Terms & Conditions</Link>
           </div>
         </div>
       </div>
