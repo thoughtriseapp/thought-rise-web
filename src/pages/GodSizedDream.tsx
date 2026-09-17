@@ -4,10 +4,10 @@ import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 
 const scriptures = [
-  { reference: 'Ephesians 3:20', thought: 'God is able to do far more than we can ask or imagine.', excerpt: '“Now to him who is able to do far more abundantly than all that we ask or think...”' },
-  { reference: 'Proverbs 16:3', thought: 'Bring the work in front of you to God and place your plans in His hands.', excerpt: '“Commit your work to the LORD, and your plans will be established.”' },
-  { reference: 'Proverbs 3:5–6', thought: 'Trust God beyond what you can see or understand, and let Him lead the way.', excerpt: '“Trust in the LORD with all your heart, and do not lean on your own understanding.”' },
-  { reference: 'Philippians 3:13–14', thought: 'Keep reaching forward toward what God is calling you to pursue in Christ.', excerpt: '“...forgetting what lies behind and straining forward to what lies ahead...”' },
+  { reference: 'Ephesians 3:20', thought: 'God is able to do far more than we can ask or imagine.', excerpt: '“Now to him who is able to do far more abundantly than all that we ask or think...”', bibleUrl: 'https://www.bible.com/bible/59/EPH.3.20.ESV' },
+  { reference: 'Proverbs 16:3', thought: 'Bring the work in front of you to God and place your plans in His hands.', excerpt: '“Commit your work to the LORD, and your plans will be established.”', bibleUrl: 'https://www.bible.com/bible/59/PRO.16.3.ESV' },
+  { reference: 'Proverbs 3:5–6', thought: 'Trust God beyond what you can see or understand, and let Him lead the way.', excerpt: '“Trust in the LORD with all your heart, and do not lean on your own understanding.”', bibleUrl: 'https://www.bible.com/bible/59/PRO.3.5-6.ESV' },
+  { reference: 'Philippians 3:13–14', thought: 'Keep reaching forward toward what God is calling you to pursue in Christ.', excerpt: '“...forgetting what lies behind and straining forward to what lies ahead...”', bibleUrl: 'https://www.bible.com/bible/59/PHP.3.13-14.ESV' },
 ];
 
 const GodSizedDream = () => {
@@ -113,7 +113,7 @@ const GodSizedDream = () => {
             <h2 id="scripture-title" className="font-heading text-3xl md:text-4xl font-semibold text-foreground mt-2">{selectedScripture.reference}</h2>
             <p className="font-heading text-2xl text-foreground leading-relaxed mt-6">{selectedScripture.excerpt}</p>
             <p className="mt-5 text-sm text-muted-foreground">English Standard Version (ESV)</p>
-            <p className="mt-6 text-sm text-muted-foreground">Open your Bible or Bible app to read the complete passage in context.</p>
+            <a href={selectedScripture.bibleUrl} target="_blank" rel="noopener noreferrer" className="inline-flex mt-6 text-sm font-semibold text-primary hover:underline">Read the complete passage in the Bible app →</a>
           </div>
         </div>
       )}
