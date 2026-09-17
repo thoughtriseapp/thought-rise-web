@@ -1,8 +1,18 @@
+import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 
+const scriptures = [
+  { reference: 'Ephesians 3:20', thought: 'God is able to do far more than we can ask or imagine.', excerpt: '“Now to him who is able to do far more abundantly than all that we ask or think...”' },
+  { reference: 'Proverbs 16:3', thought: 'Bring the work in front of you to God and place your plans in His hands.', excerpt: '“Commit your work to the LORD, and your plans will be established.”' },
+  { reference: 'Proverbs 3:5–6', thought: 'Trust God beyond what you can see or understand, and let Him lead the way.', excerpt: '“Trust in the LORD with all your heart, and do not lean on your own understanding.”' },
+  { reference: 'Philippians 3:13–14', thought: 'Keep reaching forward toward what God is calling you to pursue in Christ.', excerpt: '“...forgetting what lies behind and straining forward to what lies ahead...”' },
+];
+
 const GodSizedDream = () => {
+  const [selectedScripture, setSelectedScripture] = useState<(typeof scriptures)[number] | null>(null);
+
   return (
     <div className="min-h-screen bg-background">
       <Navbar />
@@ -53,10 +63,13 @@ const GodSizedDream = () => {
             </div>
 
             <div className="grid md:grid-cols-2 gap-5 my-10">
-              <div className="rounded-2xl border border-border/60 p-6 bg-card"><p className="text-sm uppercase tracking-widest text-primary font-semibold">Ephesians 3:20</p><p className="mt-3 text-foreground">God is able to do immeasurably more than we ask or imagine, according to His power at work within us.</p></div>
-              <div className="rounded-2xl border border-border/60 p-6 bg-card"><p className="text-sm uppercase tracking-widest text-primary font-semibold">Proverbs 16:3</p><p className="mt-3 text-foreground">Commit what you do to the Lord. Our plans belong in His hands.</p></div>
-              <div className="rounded-2xl border border-border/60 p-6 bg-card"><p className="text-sm uppercase tracking-widest text-primary font-semibold">Proverbs 3:5–6</p><p className="mt-3 text-foreground">Trust the Lord rather than depending entirely on your own understanding, and allow Him to direct your path.</p></div>
-              <div className="rounded-2xl border border-border/60 p-6 bg-card"><p className="text-sm uppercase tracking-widest text-primary font-semibold">Philippians 3:13–14</p><p className="mt-3 text-foreground">Paul describes reaching forward and pressing on toward the goal of God’s call in Christ.</p></div>
+              {scriptures.map((scripture) => (
+                <button key={scripture.reference} type="button" onClick={() => setSelectedScripture(scripture)} className="rounded-2xl border border-border/60 p-6 bg-card text-left transition-all hover:border-primary/50 hover:shadow-md focus:outline-none focus:ring-2 focus:ring-primary/30">
+                  <p className="text-sm uppercase tracking-widest text-primary font-semibold">{scripture.reference}</p>
+                  <p className="mt-3 text-foreground">{scripture.thought}</p>
+                  <p className="mt-5 text-sm font-semibold text-primary">Read Scripture →</p>
+                </button>
+              ))}
             </div>
 
             <blockquote className="my-10 rounded-2xl bg-secondary/25 border border-border/50 p-7 md:p-10 text-center">
@@ -91,6 +104,20 @@ const GodSizedDream = () => {
           </div>
         </section>
       </main>
+
+      {selectedScripture && (
+        <div className="fixed inset-0 z-50 flex items-center justify-center bg-foreground/45 p-4" onClick={() => setSelectedScripture(null)}>
+          <div role="dialog" aria-modal="true" aria-labelledby="scripture-title" className="relative w-full max-w-xl rounded-3xl bg-background p-7 md:p-10 shadow-2xl" onClick={(event) => event.stopPropagation()}>
+            <button type="button" onClick={() => setSelectedScripture(null)} className="absolute right-5 top-4 text-2xl text-muted-foreground hover:text-foreground" aria-label="Close Scripture">×</button>
+            <p className="text-primary font-semibold tracking-widest uppercase text-sm">Scripture</p>
+            <h2 id="scripture-title" className="font-heading text-3xl md:text-4xl font-semibold text-foreground mt-2">{selectedScripture.reference}</h2>
+            <p className="font-heading text-2xl text-foreground leading-relaxed mt-6">{selectedScripture.excerpt}</p>
+            <p className="mt-5 text-sm text-muted-foreground">English Standard Version (ESV)</p>
+            <p className="mt-6 text-sm text-muted-foreground">Open your Bible or Bible app to read the complete passage in context.</p>
+          </div>
+        </div>
+      )}
+
       <Footer />
     </div>
   );
