@@ -11,9 +11,7 @@ const GodSizedDream = () => {
           <div className="container-narrow mx-auto text-center relative z-10">
             <p className="text-primary font-semibold tracking-widest uppercase text-sm mb-4">God-sized dreams</p>
             <h1 className="font-heading text-5xl md:text-6xl font-semibold text-foreground leading-tight">What is a God-sized dream?</h1>
-            <p className="mt-6 text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-              It’s the bigger thing you believe God may be inviting you to pursue faithfully, one step at a time, while depending on Him more than your own ability and trusting Him with the outcome.
-            </p>
+            <p className="mt-6 text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">It’s the bigger thing you believe God may be inviting you to pursue faithfully, one step at a time, while depending on Him more than your own ability and trusting Him with the outcome.</p>
           </div>
         </section>
 
@@ -22,7 +20,7 @@ const GodSizedDream = () => {
             <div>
               <h2 className="font-heading text-3xl md:text-4xl font-semibold text-foreground mb-4">It doesn’t have to look “big.”</h2>
               <p>A God-sized dream is not defined by how impressive it looks to other people. It might be starting a ministry or business. It might also be writing the book you can’t stop thinking about, rebuilding something in your family, serving people in a way that stretches you, creating something meaningful, or taking a faithful step into a new season.</p>
-              <p className="mt-4">Holley Gerth, who has written extensively about God-sized dreams, makes an important distinction: big or small, what matters is not the apparent size of the dream but the God we are trusting as we pursue it. citeturn1search2</p>
+              <p className="mt-4">Author Holley Gerth, who has written extensively about God-sized dreams, makes an important distinction: big or small, what matters is not the apparent size of the dream but the God we are trusting as we pursue it.</p>
             </div>
 
             <blockquote className="my-10 rounded-2xl bg-secondary/25 border border-border/50 p-7 md:p-10 text-center">
@@ -38,22 +36,10 @@ const GodSizedDream = () => {
             </div>
 
             <div className="grid md:grid-cols-2 gap-5 my-10">
-              <div className="rounded-2xl border border-border/60 p-6 bg-card">
-                <p className="text-sm uppercase tracking-widest text-primary font-semibold">Ephesians 3:20</p>
-                <p className="mt-3 text-foreground">God is able to do immeasurably more than we ask or imagine, according to His power at work within us.</p>
-              </div>
-              <div className="rounded-2xl border border-border/60 p-6 bg-card">
-                <p className="text-sm uppercase tracking-widest text-primary font-semibold">Proverbs 16:3</p>
-                <p className="mt-3 text-foreground">Commit what you do to the Lord. Our plans belong in His hands.</p>
-              </div>
-              <div className="rounded-2xl border border-border/60 p-6 bg-card">
-                <p className="text-sm uppercase tracking-widest text-primary font-semibold">Proverbs 3:5–6</p>
-                <p className="mt-3 text-foreground">Trust the Lord rather than depending entirely on your own understanding, and allow Him to direct your path.</p>
-              </div>
-              <div className="rounded-2xl border border-border/60 p-6 bg-card">
-                <p className="text-sm uppercase tracking-widest text-primary font-semibold">Philippians 3:13–14</p>
-                <p className="mt-3 text-foreground">Paul describes reaching forward and pressing on toward the goal of God’s call in Christ.</p>
-              </div>
+              <div className="rounded-2xl border border-border/60 p-6 bg-card"><p className="text-sm uppercase tracking-widest text-primary font-semibold">Ephesians 3:20</p><p className="mt-3 text-foreground">God is able to do immeasurably more than we ask or imagine, according to His power at work within us.</p></div>
+              <div className="rounded-2xl border border-border/60 p-6 bg-card"><p className="text-sm uppercase tracking-widest text-primary font-semibold">Proverbs 16:3</p><p className="mt-3 text-foreground">Commit what you do to the Lord. Our plans belong in His hands.</p></div>
+              <div className="rounded-2xl border border-border/60 p-6 bg-card"><p className="text-sm uppercase tracking-widest text-primary font-semibold">Proverbs 3:5–6</p><p className="mt-3 text-foreground">Trust the Lord rather than depending entirely on your own understanding, and allow Him to direct your path.</p></div>
+              <div className="rounded-2xl border border-border/60 p-6 bg-card"><p className="text-sm uppercase tracking-widest text-primary font-semibold">Philippians 3:13–14</p><p className="mt-3 text-foreground">Paul describes reaching forward and pressing on toward the goal of God’s call in Christ.</p></div>
             </div>
 
             <blockquote className="my-10 rounded-2xl bg-accent/25 border border-border/50 p-7 md:p-10 text-center">
@@ -84,7 +70,7 @@ const GodSizedDream = () => {
               <p className="text-primary font-semibold tracking-widest uppercase text-sm">Thought Rise</p>
               <h2 className="font-heading text-3xl md:text-4xl font-semibold text-foreground mt-3">Keep the dream in front of you without trying to control the outcome.</h2>
               <p className="mt-5 max-w-2xl mx-auto">In Thought Rise, you choose the God-sized dream you want to keep before you. We’ll speak it back to you, give you questions to reflect on, and bring you encouragement, practical tools, and Scripture as you keep taking the next faithful step.</p>
-              <Link to="/" className="inline-flex mt-7 text-primary font-semibold hover:underline">Explore the Thought Rise experience →</Link>
+              <Link to="/#features" className="inline-flex mt-7 text-primary font-semibold hover:underline">Explore the Thought Rise experience →</Link>
             </div>
           </div>
         </section>
