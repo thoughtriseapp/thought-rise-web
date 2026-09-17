@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import { useScrollAnimation } from '@/hooks/useScrollAnimation';
+import howItWorks from '@/assets/how-it-works-1.jpg';
 
 const steps = [
   { number: '01', title: 'It starts with you.', description: 'Thought Rise greets you by name and gives you a moment to settle in before the day gets moving, beginning with gratitude, intentional breathing, and even a simple stretch.' },
@@ -15,9 +16,13 @@ const Features = () => {
   return (
     <section id="features" className="section-padding bg-background">
       <div ref={ref} className="container-narrow mx-auto">
-        <motion.div initial={{ opacity: 0, y: 30 }} animate={isVisible ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }} transition={{ duration: 0.6 }} className="text-center max-w-3xl mx-auto mb-16">
+        <motion.div initial={{ opacity: 0, y: 30 }} animate={isVisible ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }} transition={{ duration: 0.6 }} className="text-center max-w-3xl mx-auto mb-12">
           <h2 className="font-heading text-4xl md:text-5xl font-semibold text-foreground">A few minutes in God’s Word.<br /><span className="text-primary">Something to carry with you all day.</span></h2>
-          <p className="mt-6 text-muted-foreground text-base md:text-lg leading-relaxed">Each week, Thought Rise explores a biblical theme through short daily messages designed to help you carry Scripture into the way you think, respond, and live. But Thought Rise is more than a daily devotional. It’s a guided morning experience created to help you slow down, turn your attention toward God, remember what matters, and begin your day with intention.</p>
+          <p className="mt-6 text-muted-foreground text-base md:text-lg leading-relaxed">Each week, Thought Rise explores a biblical theme through short daily messages. But it’s more than a devotional. It’s a guided morning experience that helps you slow down, turn your attention toward Jesus, remember what matters, and begin your day with intention.</p>
+        </motion.div>
+
+        <motion.div initial={{ opacity: 0, y: 24 }} animate={isVisible ? { opacity: 1, y: 0 } : { opacity: 0, y: 24 }} transition={{ duration: 0.6, delay: 0.1 }} className="max-w-4xl mx-auto mb-14 overflow-hidden rounded-3xl shadow-lg border border-border/40">
+          <img src={howItWorks} alt="A quiet morning moment" loading="lazy" className="w-full h-64 md:h-80 object-cover" />
         </motion.div>
 
         <motion.div initial={{ opacity: 0, y: 30 }} animate={isVisible ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }} transition={{ duration: 0.6, delay: 0.15 }} className="text-center mb-10">
