@@ -20,12 +20,12 @@ const GodSizedDream = () => {
             <div>
               <h2 className="font-heading text-3xl md:text-4xl font-semibold text-foreground mb-4">It doesn’t have to look “big.”</h2>
               <p>A God-sized dream is not defined by how impressive it looks to other people. It might be starting a ministry or business. It might also be writing the book you can’t stop thinking about, rebuilding something in your family, serving people in a way that stretches you, creating something meaningful, or taking a faithful step into a new season.</p>
-              <p className="mt-4">Author Holley Gerth, who has written extensively about God-sized dreams, makes an important distinction: big or small, what matters is not the apparent size of the dream but the God we are trusting as we pursue it.</p>
+              <p className="mt-4"><a href="https://holleygerth.com/category/god-sized-dreams/" target="_blank" rel="noopener noreferrer" className="text-primary font-semibold hover:underline">Author Holley Gerth</a>, who has written extensively about God-sized dreams, describes them as journeys that change and grow us as we keep taking steps in God’s direction. Her writing is a helpful reminder that the point isn’t simply accomplishing a goal. It’s becoming who God is shaping us to be along the way.</p>
             </div>
 
             <blockquote className="my-10 rounded-2xl bg-secondary/25 border border-border/50 p-7 md:p-10 text-center">
               <p className="font-heading text-2xl md:text-3xl text-foreground leading-relaxed">“Our dreams should scare us. They should be so big that without God they would be impossible to achieve.”</p>
-              <footer className="mt-4 text-sm font-semibold text-primary">Mark Batterson, <em>Chase the Lion</em></footer>
+              <footer className="mt-4 text-sm font-semibold text-primary"><a href="https://www.markbatterson.com/books/chase-the-lion/" target="_blank" rel="noopener noreferrer" className="hover:underline">Mark Batterson, <em>Chase the Lion</em></a></footer>
             </blockquote>
 
             <div>
@@ -44,7 +44,7 @@ const GodSizedDream = () => {
 
             <blockquote className="my-10 rounded-2xl bg-accent/25 border border-border/50 p-7 md:p-10 text-center">
               <p className="font-heading text-2xl md:text-3xl text-foreground leading-relaxed">“Drawing prayer circles around our dreams isn’t just a mechanism whereby we accomplish great things for God. It’s a mechanism whereby God accomplishes great things in us.”</p>
-              <footer className="mt-4 text-sm font-semibold text-primary">Mark Batterson, <em>The Circle Maker</em></footer>
+              <footer className="mt-4 text-sm font-semibold text-primary"><a href="https://www.markbatterson.com/books/the-circle-maker/" target="_blank" rel="noopener noreferrer" className="hover:underline">Mark Batterson, <em>The Circle Maker</em></a></footer>
             </blockquote>
 
             <div>
@@ -56,7 +56,7 @@ const GodSizedDream = () => {
 
             <blockquote className="my-10 rounded-2xl bg-secondary/25 border border-border/50 p-7 md:p-10 text-center">
               <p className="font-heading text-2xl md:text-3xl text-foreground leading-relaxed">“God-sized dreams aren’t about goals…they’re about journeys. A thousand steps in His direction.”</p>
-              <footer className="mt-4 text-sm font-semibold text-primary">Holley Gerth</footer>
+              <footer className="mt-4 text-sm font-semibold text-primary"><a href="https://holleygerth.com/category/god-sized-dreams/" target="_blank" rel="noopener noreferrer" className="hover:underline">Holley Gerth</a></footer>
             </blockquote>
 
             <div>
