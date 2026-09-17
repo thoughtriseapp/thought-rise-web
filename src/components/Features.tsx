@@ -32,7 +32,7 @@ const Features = () => {
               <div>
                 <h4 className="font-heading text-xl md:text-2xl font-semibold text-foreground">{step.title}</h4>
                 <p className="mt-2 text-muted-foreground leading-relaxed">{step.description}</p>
-                {step.dreamLink && <Link to="/what-is-a-god-sized-dream" className="inline-flex mt-3 text-sm font-semibold text-primary hover:underline">What do we mean by a “God-sized dream”? →</Link>}
+                {step.dreamLink && <Link to="/what-is-a-god-sized-dream" onClick={() => window.scrollTo({ top: 0, left: 0, behavior: 'auto' })} className="inline-flex mt-3 text-sm font-semibold text-primary hover:underline">What do we mean by a “God-sized dream”? →</Link>}
               </div>
             </motion.div>
           ))}
