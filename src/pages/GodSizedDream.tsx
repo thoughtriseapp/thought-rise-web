@@ -88,11 +88,10 @@ const GodSizedDream = () => {
 
             <div>
               <h2 className="font-heading text-3xl md:text-4xl font-semibold text-foreground mb-4">Does everyone have one?</h2>
-              <p>Maybe. But I don’t think we need to put pressure on ourselves to come up with one.</p>
-              <p className="mt-4">Scripture never tells us that every Christian has to identify one dramatic, lifelong dream. Our first calling is much simpler, and much bigger: <strong className="text-foreground">follow Jesus faithfully.</strong></p>
-              <p className="mt-4">But I do think a lot of us have something that keeps coming back to us. A hope. A burden. An idea. An opportunity. Something we would love to do, build, change, create, restore, or become that feels a little bigger than where we are right now.</p>
-              <p className="mt-4">And if you don’t know what yours is yet, you don’t need to manufacture one. Keep walking with Jesus. Pay attention to the gifts He’s given you, the needs that move your heart, the opportunities in front of you, and the desires you keep bringing back to Him in prayer.</p>
-              <p className="mt-4">Your God-sized dream may become clearer over time. It may also change as you do.</p>
+              <p><strong className="text-foreground">I believe we do.</strong> If you don’t know what yours is yet, that doesn’t mean you don’t have one. It may simply mean you haven’t discovered it yet.</p>
+              <p className="mt-4">And it doesn’t have to begin with something enormous. Start with something small if you need to. What is one thing you’re praying about, hoping for, wanting to change, or feeling drawn to pursue in this season?</p>
+              <p className="mt-4">Then pay attention. Is there something that keeps coming back to you in prayer? Something the Holy Spirit continues to bring to mind? Something that has been affirmed through Scripture, circumstances, or other believers you trust? That may just be the place to begin.</p>
+              <p className="mt-4">Your God-sized dream doesn’t have to be perfectly worded before you enter it in Thought Rise. Give it a name. Make it as specific as you can right now. You can always refine it as God gives you greater clarity.</p>
             </div>
 
             <div>
