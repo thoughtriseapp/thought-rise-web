@@ -4,19 +4,18 @@ import { Link, useLocation } from 'react-router-dom';
 import logo from '@/assets/thought-rise-logo.avif';
 
 const navLinks = [
-  { name: 'Home', href: '#home' },
-  { name: 'The Experience', href: '#features' },
-  { name: 'God-Sized Dream', href: '/what-is-a-god-sized-dream', pageLink: true },
-  { name: 'Our Story', href: '/our-story', pageLink: true },
-  { name: 'Contact', href: '#contact' },
+  { name: 'Home', href: '/' },
+  { name: 'The Experience', href: '/the-experience' },
+  { name: 'God-Sized Dream', href: '/what-is-a-god-sized-dream' },
+  { name: 'Our Story', href: '/our-story' },
+  { name: 'Contact', href: '/#contact' },
 ];
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const location = useLocation();
-  const isHomePage = location.pathname === '/';
-  const isSubPage = !isHomePage;
+  const isSubPage = location.pathname !== '/';
 
   useEffect(() => {
     const handleScroll = () => setScrolled(window.scrollY > 50);
@@ -24,16 +23,9 @@ const Navbar = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  const getHref = (link: (typeof navLinks)[number]) => {
-    if (link.pageLink) return link.href;
-    return isHomePage ? link.href : `/${link.href}`;
-  };
-
-  const handleNavClick = (link: (typeof navLinks)[number]) => {
+  const handleNavClick = (href: string) => {
     setIsOpen(false);
-    if (link.pageLink && location.pathname === link.href) {
-      window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
-    }
+    if (location.pathname === href) window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
   };
 
   return (
@@ -43,7 +35,7 @@ const Navbar = () => {
           <Link to="/" className="flex items-center"><img src={logo} alt="Thought Rise" className="h-10 md:h-12 w-auto" /></Link>
           <div className="hidden md:flex items-center space-x-7">
             {navLinks.map((link) => (
-              <a key={link.name} href={getHref(link)} onClick={() => handleNavClick(link)} className={`text-sm font-medium transition-colors duration-200 relative group ${scrolled || isSubPage ? 'text-primary-foreground/90 hover:text-primary-foreground' : 'text-foreground/80 hover:text-primary'}`}>
+              <a key={link.name} href={link.href} onClick={() => handleNavClick(link.href)} className={`text-sm font-medium transition-colors duration-200 relative group ${scrolled || isSubPage ? 'text-primary-foreground/90 hover:text-primary-foreground' : 'text-foreground/80 hover:text-primary'}`}>
                 {link.name}<span className={`absolute -bottom-1 left-0 w-0 h-0.5 transition-all duration-300 group-hover:w-full ${scrolled || isSubPage ? 'bg-primary-foreground' : 'bg-primary'}`} />
               </a>
             ))}
@@ -52,7 +44,7 @@ const Navbar = () => {
         </div>
         <div className={`md:hidden overflow-hidden transition-all duration-300 ${isOpen ? 'max-h-[28rem]' : 'max-h-0'}`}>
           <div className="flex flex-col space-y-4 py-4 px-2 bg-secondary/95 backdrop-blur-md rounded-lg mt-2 shadow-lg">
-            {navLinks.map((link) => <a key={link.name} href={getHref(link)} onClick={() => handleNavClick(link)} className="text-sm font-medium text-foreground/80 hover:text-primary transition-colors duration-200 px-2 py-1">{link.name}</a>)}
+            {navLinks.map((link) => <a key={link.name} href={link.href} onClick={() => handleNavClick(link.href)} className="text-sm font-medium text-foreground/80 hover:text-primary transition-colors duration-200 px-2 py-1">{link.name}</a>)}
           </div>
         </div>
       </div>
