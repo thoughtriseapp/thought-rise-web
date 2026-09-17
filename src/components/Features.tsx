@@ -1,10 +1,11 @@
 import { motion } from 'framer-motion';
+import { Link } from 'react-router-dom';
 import { useScrollAnimation } from '@/hooks/useScrollAnimation';
 
 const steps = [
   { number: '01', title: 'It starts with you.', description: 'Thought Rise greets you by name and gives you a moment to settle in before the day gets moving, beginning with gratitude, intentional breathing, and even a simple stretch.' },
   { number: '02', title: 'Turn your attention to God’s Word.', description: 'A Scripture-based affirmation prepares your heart, followed by Scripture and a short devotional centered on one biblical theme explored throughout the week.' },
-  { number: '03', title: 'Come back to your God-sized dream.', description: 'Hear your own God-sized dream spoken back to you, reflect on meaningful questions, and receive motivation, practical tools, and Scripture related to the bigger thing you’re pursuing.' },
+  { number: '03', title: 'Come back to your God-sized dream.', description: 'Hear your own God-sized dream spoken back to you, reflect on meaningful questions, and receive motivation, practical tools, and Scripture related to the bigger thing you’re pursuing.', dreamLink: true },
   { number: '04', title: 'Speak truth over your day.', description: 'Hear the three personal affirmations you’ve chosen for yourself. Change them anytime as your circumstances, priorities, or season changes.' },
   { number: '05', title: 'Before you go, pray.', description: 'Your morning closes with prayer and a personal send-off designed to leave you encouraged, focused, and ready to step into your day.' }
 ];
@@ -28,7 +29,11 @@ const Features = () => {
           {steps.map((step, index) => (
             <motion.div key={step.number} initial={{ opacity: 0, x: index % 2 === 0 ? -30 : 30 }} animate={isVisible ? { opacity: 1, x: 0 } : { opacity: 0, x: index % 2 === 0 ? -30 : 30 }} transition={{ duration: 0.55, delay: 0.15 + index * 0.1 }} className="flex gap-5 md:gap-7 p-6 md:p-8 rounded-2xl bg-secondary/20 border border-border/50">
               <div className="shrink-0 w-12 h-12 flex items-center justify-center bg-primary text-primary-foreground rounded-full font-semibold">{step.number}</div>
-              <div><h4 className="font-heading text-xl md:text-2xl font-semibold text-foreground">{step.title}</h4><p className="mt-2 text-muted-foreground leading-relaxed">{step.description}</p></div>
+              <div>
+                <h4 className="font-heading text-xl md:text-2xl font-semibold text-foreground">{step.title}</h4>
+                <p className="mt-2 text-muted-foreground leading-relaxed">{step.description}</p>
+                {step.dreamLink && <Link to="/what-is-a-god-sized-dream" className="inline-flex mt-3 text-sm font-semibold text-primary hover:underline">What do we mean by a “God-sized dream”? →</Link>}
+              </div>
             </motion.div>
           ))}
         </div>
