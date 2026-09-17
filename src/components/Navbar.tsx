@@ -7,7 +7,7 @@ const navLinks = [
   { name: 'Home', href: '#home' },
   { name: 'The Experience', href: '#features' },
   { name: 'God-Sized Dream', href: '/what-is-a-god-sized-dream', pageLink: true },
-  { name: 'Our Story', href: '#about' },
+  { name: 'Our Story', href: '/our-story', pageLink: true },
   { name: 'Contact', href: '#contact' },
 ];
 
