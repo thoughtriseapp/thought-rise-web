@@ -30,8 +30,8 @@ const GodSizedDream = () => {
             <div>
               <h2 className="font-heading text-3xl md:text-4xl font-semibold text-foreground mb-4">It doesn’t have to look “big.”</h2>
               <p>When we talk about a <strong className="text-foreground">God-sized dream</strong> at Thought Rise, we’re not necessarily talking about doing something huge.</p>
-              <p className="mt-4">Maybe your dream is to start a business or ministry. Maybe it’s to write a book, go back to school, make a career change, restore something in your family, or finally take a step toward something that’s been on your heart for years.</p>
-              <p className="mt-4">What makes a dream “God-sized” isn’t how impressive it looks to anyone else.</p>
+              <p className="mt-4">Maybe your dream is to start a business or ministry, write a book, go back to school, make a career change, or improve your health and fitness. But it can also be something you can’t simply make happen: the child you’re longing for, a godly spouse for your son or daughter, a loved one coming to Christ, or a relationship you desperately want to see restored.</p>
+              <p className="mt-4">What makes a dream “God-sized” isn’t how impressive it looks to anyone else. Sometimes it’s something you’re building or pursuing. Sometimes it’s something you’re faithfully praying for and placing in God’s hands.</p>
               <p className="mt-4"><a href="https://holleygerth.com/category/god-sized-dreams/" target="_blank" rel="noopener noreferrer" className="text-primary font-semibold hover:underline">Author Holley Gerth</a> has written quite a bit about God-sized dreams, and I love the way she puts it:</p>
             </div>
 
@@ -76,6 +76,15 @@ const GodSizedDream = () => {
               <p className="font-heading text-2xl md:text-3xl text-foreground leading-relaxed">“Drawing prayer circles around our dreams isn’t just a mechanism whereby we accomplish great things for God. It’s a mechanism whereby God accomplishes great things in us.”</p>
               <footer className="mt-4 text-sm font-semibold text-primary"><a href="https://www.markbatterson.com/books/the-circle-maker/" target="_blank" rel="noopener noreferrer" className="hover:underline">Mark Batterson, <em>The Circle Maker</em></a></footer>
             </blockquote>
+
+            <div>
+              <h2 className="font-heading text-3xl md:text-4xl font-semibold text-foreground mb-4">What does moving toward the dream look like?</h2>
+              <p>That depends on the dream.</p>
+              <p className="mt-4">Sometimes there are very real action steps to take. Make the phone call. Fill out the application. Start writing. Change the way you eat. Begin exercising. Save the money. Have the conversation.</p>
+              <p className="mt-4">But some dreams involve outcomes you simply cannot control. In those seasons, moving toward the dream may look more like a commitment to prayer, spending time in Scripture, developing a habit, preparing yourself for what God may do, or faithfully showing up in the ways that are yours to do while leaving the rest with Him.</p>
+              <p className="mt-4">Either way, I think it helps to make the dream <strong className="text-foreground">specific and time-bound</strong>. That doesn’t always mean putting a deadline on the outcome, especially when the outcome isn’t yours to control. It might mean setting a date for a step you <em>can</em> take, or making a specific commitment to the time you’ll spend working, praying, learning, training, or preparing.</p>
+              <p className="mt-4">The point isn’t to control the dream. It’s to give your faithfulness somewhere practical to go.</p>
+            </div>
 
             <div>
               <h2 className="font-heading text-3xl md:text-4xl font-semibold text-foreground mb-4">Does everyone have one?</h2>
