@@ -53,7 +53,7 @@ const Experience = () => (
               <h2 className="font-heading text-4xl md:text-5xl font-semibold text-foreground mt-3">Thought Rise pairs beautifully with journaling.</h2>
               <p className="mt-5 text-muted-foreground text-lg leading-relaxed">Thought Rise is designed to help you slow down and reflect. Keeping a journal nearby gives you a place to capture a Scripture that stands out, something you’re grateful for, a thought about your God-sized dream, or whatever God brings to mind during your morning.</p>
               <p className="mt-4 text-muted-foreground leading-relaxed">You don’t need a journal to use Thought Rise. Some mornings you may simply listen. Other mornings you may want to pause, write, pray, or sit with something a little longer. The experience is yours.</p>
-              <Link to="/#contact" className="inline-flex mt-8 px-7 py-3 rounded-full bg-primary text-primary-foreground font-semibold hover:opacity-90 transition-opacity">Start with Thought Rise →</Link>
+              <Link to="/#contact" onClick={() => window.setTimeout(() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth', block: 'start' }), 0)} className="inline-flex mt-8 px-7 py-3 rounded-full bg-primary text-primary-foreground font-semibold hover:opacity-90 transition-opacity">Start with Thought Rise →</Link>
             </div>
           </div>
         </div>
