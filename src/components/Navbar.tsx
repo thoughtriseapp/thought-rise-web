@@ -6,7 +6,7 @@ import logo from '@/assets/thought-rise-logo.avif';
 const navLinks = [
   { name: 'Home', href: '/' },
   { name: 'The Experience', href: '/the-experience' },
-  { name: 'God-Sized Dream', href: '/what-is-a-god-sized-dream' },
+  { name: 'Your God-Sized Dream', href: '/what-is-a-god-sized-dream' },
   { name: 'Our Story', href: '/our-story' },
   { name: 'Contact', href: '/#contact' },
 ];
