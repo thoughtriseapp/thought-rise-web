@@ -26,7 +26,7 @@ const OurStory = () => {
 
               <div className="space-y-6 text-muted-foreground text-base md:text-lg leading-relaxed">
                 <h2 className="font-heading text-3xl md:text-4xl font-semibold text-foreground">Meet the mother-daughter team behind Thought Rise.</h2>
-                <p>We’re Julie Kern and Brianna Collins, a mother-daughter team who share a love for Jesus and a desire to help women begin their mornings rooted in truth, reminded of who they are and whose they are, and encouraged for whatever the day holds.</p>
+                <p>We’re Julie Kern and Brianna Collins, a mother-daughter team who share a love for Jesus and a desire to help others begin their mornings rooted in truth, reminded of who they are and whose they are, and encouraged for whatever the day holds.</p>
                 <p>On Mother’s Day 2024, Julie was spending a quiet morning in prayer at one of her favorite beach spots when the beginnings of Thought Rise started taking shape.</p>
                 <p>The idea was deeply personal: what if there were a morning experience that could actually speak to you by name? One that brought together gratitude, Scripture, personalized affirmations, prayer, and reminders of the God-sized dream you don’t want to lose sight of?</p>
                 <p>When Julie shared the idea with Brianna, something clicked. Julie had spent more than 20 years in software development before becoming an entrepreneur. Brianna was already using her creativity as a Christian designer and business owner. Our backgrounds were very different, but suddenly they made a lot of sense together.</p>
