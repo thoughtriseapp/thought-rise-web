@@ -53,17 +53,9 @@ const Experience = () => (
               <h2 className="font-heading text-4xl md:text-5xl font-semibold text-foreground mt-3">Thought Rise pairs beautifully with journaling.</h2>
               <p className="mt-5 text-muted-foreground text-lg leading-relaxed">Thought Rise is designed to help you slow down and reflect. Keeping a journal nearby gives you a place to capture a Scripture that stands out, something you’re grateful for, a thought about your God-sized dream, or whatever God brings to mind during your morning.</p>
               <p className="mt-4 text-muted-foreground leading-relaxed">You don’t need a journal to use Thought Rise. Some mornings you may simply listen. Other mornings you may want to pause, write, pray, or sit with something a little longer. The experience is yours.</p>
+              <Link to="/#contact" className="inline-flex mt-8 px-7 py-3 rounded-full bg-primary text-primary-foreground font-semibold hover:opacity-90 transition-opacity">Start with Thought Rise →</Link>
             </div>
           </div>
-        </div>
-      </section>
-
-      <section className="section-padding bg-background text-center">
-        <div className="container-narrow mx-auto px-6 max-w-3xl">
-          <h2 className="font-heading text-4xl md:text-5xl font-semibold text-foreground">The goal isn’t to keep you in the app.</h2>
-          <p className="font-heading text-2xl md:text-3xl text-primary mt-4">It’s to help you step into your day differently.</p>
-          <p className="mt-6 text-muted-foreground text-lg">Rooted in Scripture. Focused on Jesus. Encouraged for whatever is ahead.</p>
-          <Link to="/#contact" className="inline-flex mt-8 px-7 py-3 rounded-full bg-primary text-primary-foreground font-semibold hover:opacity-90 transition-opacity">Start with Thought Rise →</Link>
         </div>
       </section>
     </main>
