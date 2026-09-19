@@ -12,7 +12,7 @@ const Contact = () => {
         <motion.div initial={{ opacity: 0, y: 30 }} animate={isVisible ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }} transition={{ duration: 0.6 }} className="text-center max-w-3xl mx-auto">
           <h2 className="font-heading text-4xl md:text-5xl font-semibold text-foreground">Tomorrow morning can begin differently.</h2>
           <p className="mt-6 text-lg text-muted-foreground leading-relaxed">A few minutes to slow down. Time in God’s Word. Your name. Your affirmations. Your God-sized dream. Prayer for the day ahead. And a little encouragement to take with you when it’s time to get up and go.</p>
-          <p className="mt-6 font-heading text-2xl text-foreground">Thought Rise is free. Your morning experience is personal. And it starts with you.</p>
+          <p className="mt-6 font-heading text-2xl text-foreground">Thought Rise is free, and every morning experience is personalized for you. Start today.</p>
           <div className="mt-8 flex flex-wrap gap-4 justify-center">
             <a href="https://apps.apple.com/us/app/thought-rise/id6741752730" target="_blank" rel="noopener noreferrer" className="transition-transform duration-200 hover:scale-105"><img src={appStoreBadge} alt="Download Thought Rise on the App Store" className="h-12 md:h-14 w-auto" /></a>
             <a href="https://play.google.com/store/apps/details?id=com.thoughtrise.mobile.app&pcampaignid=web_share" target="_blank" rel="noopener noreferrer" className="transition-transform duration-200 hover:scale-105"><img src={googlePlayBadge} alt="Get Thought Rise on Google Play" className="h-12 md:h-14 w-auto" /></a>
