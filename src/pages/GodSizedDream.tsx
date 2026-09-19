@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
+import Contact from '@/components/Contact';
 
 const scriptures = [
   { reference: 'Ephesians 3:20', thought: 'God is able to do far more than we can ask or imagine.', excerpt: '“Now to him who is able to do far more abundantly than all that we ask or think...”', bibleUrl: 'https://www.bible.com/bible/59/EPH.3.20.ESV' },
@@ -111,6 +112,7 @@ const GodSizedDream = () => {
             </div>
           </div>
         </section>
+        <Contact />
       </main>
 
       {selectedScripture && (
