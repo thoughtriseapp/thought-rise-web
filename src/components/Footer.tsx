@@ -14,7 +14,7 @@ const navLinks = [
   { name: 'The Experience', href: '/the-experience' },
   { name: 'Your God-Sized Dream', href: '/what-is-a-god-sized-dream' },
   { name: 'Our Story', href: '/our-story' },
-  { name: 'Contact', href: '/#contact' },
+  { name: 'Contact', href: '/contact' },
 ];
 const socialLinks = [
   { name: 'Instagram', icon: Instagram, href: 'https://www.instagram.com/thoughtriseapp' },
