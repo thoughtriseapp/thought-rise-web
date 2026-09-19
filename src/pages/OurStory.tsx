@@ -34,7 +34,6 @@ const OurStory = () => {
                 <p>Thought Rise has grown since that first conversation, but the heart behind it really hasn’t changed. We want it to feel less like another thing to check off your morning list and more like a few intentional minutes with Jesus that are personal to you.</p>
                 <p className="font-heading text-2xl text-foreground">Our prayer is that Thought Rise becomes a bright spot in your morning, helping you grow in your love for Jesus and step into your day remembering the truth of who you are and what God may be inviting you toward.</p>
               </div>
-              </div>
             </div>
           </div>
         </section>
