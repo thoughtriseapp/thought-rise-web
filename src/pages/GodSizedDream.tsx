@@ -88,7 +88,7 @@ const GodSizedDream = () => {
 
             <div>
               <h2 className="font-heading text-3xl md:text-4xl font-semibold text-foreground mb-4">Does everyone have one?</h2>
-              <p><strong className="text-foreground">We believe we do.</strong> If you don’t know what yours is yet, that doesn’t mean you don’t have one. It may simply mean you haven’t discovered it yet.</p>
+              <p><strong className="text-foreground">We believe so.</strong> If you don’t know what yours is yet, that doesn’t mean you don’t have one. It may simply mean you haven’t discovered it yet.</p>
               <p className="mt-4">And it doesn’t have to begin with something enormous. Start with something small if you need to. What is one thing you’re praying about, hoping for, wanting to change, or feeling drawn to pursue in this season?</p>
               <p className="mt-4">Then pay attention. Is there something that keeps coming back to you in prayer? Something the Holy Spirit continues to bring to mind? Something that has been affirmed through Scripture, circumstances, or other believers you trust? That may just be the place to begin.</p>
               <p className="mt-4">Your God-sized dream doesn’t have to be perfectly worded before you enter it in Thought Rise. Give it a name. Make it as specific as you can right now. You can always refine it as God gives you greater clarity.</p>
@@ -107,7 +107,7 @@ const GodSizedDream = () => {
               <h2 className="font-heading text-3xl md:text-4xl font-semibold text-foreground mt-3">Keep the dream in front of you. Hold the outcome loosely.</h2>
               <p className="mt-5 max-w-2xl mx-auto">That’s why your God-sized dream is part of the Thought Rise morning experience. You tell us the dream you want to keep in front of you. Thought Rise speaks it back to you, gives you questions to reflect on, and brings you motivation, practical tools, and Scripture to encourage you as you keep taking the next faithful step.</p>
               <p className="mt-4 max-w-2xl mx-auto">Not because every dream will unfold exactly the way we imagine, but because there’s value in moving forward with expectation while continuing to trust God with the outcome.</p>
-              <Link to="/#features" className="inline-flex mt-7 text-primary font-semibold hover:underline">Explore the Thought Rise experience →</Link>
+              <Link to="/the-experience" className="inline-flex mt-7 text-primary font-semibold hover:underline">Explore the Thought Rise experience →</Link>
             </div>
           </div>
         </section>
