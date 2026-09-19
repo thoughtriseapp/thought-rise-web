@@ -8,6 +8,7 @@ import Index from "./pages/Index";
 import Experience from "./pages/Experience";
 import GodSizedDream from "./pages/GodSizedDream";
 import OurStory from "./pages/OurStory";
+import ContactPage from "./pages/ContactPage";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
 import TermsAndConditions from "./pages/TermsAndConditions";
 import NotFound from "./pages/NotFound";
@@ -40,6 +41,7 @@ const App = () => (
           <Route path="/the-experience" element={<Experience />} />
           <Route path="/what-is-a-god-sized-dream" element={<GodSizedDream />} />
           <Route path="/our-story" element={<OurStory />} />
+          <Route path="/contact" element={<ContactPage />} />
           <Route path="/privacy-policy" element={<PrivacyPolicy />} />
           <Route path="/terms-and-conditions" element={<TermsAndConditions />} />
           <Route path="*" element={<NotFound />} />
