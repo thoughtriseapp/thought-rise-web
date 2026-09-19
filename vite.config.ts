@@ -5,6 +5,8 @@ import { componentTagger } from "lovable-tagger";
 
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
+  // Use relative asset URLs so the custom domain and direct GitHub Pages routes load the same build assets reliably.
+  base: "./",
   server: {
     host: "::",
     port: 4444,
