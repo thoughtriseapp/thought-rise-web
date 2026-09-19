@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import { useScrollAnimation } from '@/hooks/useScrollAnimation';
-import howItWorks from '@/assets/how-it-works-1.jpg';
+import howItWorks from '@/assets/thought-rise-morning.png';
 
 const steps = [
   { number: '01', title: 'It starts with you.', description: 'Thought Rise greets you by name and gives you a moment to settle in before the day gets moving, beginning with gratitude, intentional breathing, and even a simple stretch.' },
