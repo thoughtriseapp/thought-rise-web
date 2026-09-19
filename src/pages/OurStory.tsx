@@ -1,5 +1,6 @@
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
+import Contact from '@/components/Contact';
 import aboutFounders from '@/assets/about-founders.jpg';
 
 const OurStory = () => {
@@ -37,6 +38,7 @@ const OurStory = () => {
             </div>
           </div>
         </section>
+        <Contact />
       </main>
       <Footer />
     </div>
