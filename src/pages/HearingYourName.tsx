@@ -1,5 +1,6 @@
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
+import hearingYourName from '@/assets/thought-rise-morning.png';
 
 const HearingYourName = () => {
   return (
@@ -14,6 +15,14 @@ const HearingYourName = () => {
           </div>
         </section>
 
+        <section className="bg-background">
+          <div className="container-narrow mx-auto px-6 pt-10 md:pt-14">
+            <div className="max-w-4xl mx-auto overflow-hidden rounded-3xl shadow-lg border border-border/40">
+              <img src={hearingYourName} alt="A quiet morning with a Bible, journal, and coffee" className="w-full h-64 md:h-96 object-cover" />
+            </div>
+          </div>
+        </section>
+
         <section className="section-padding bg-background">
           <div className="container-narrow mx-auto px-6 max-w-4xl space-y-14">
             <div>
@@ -22,6 +31,15 @@ const HearingYourName = () => {
               <div className="mt-5 space-y-4 text-muted-foreground leading-relaxed">
                 <p>Researchers have found that hearing your own name is processed differently from hearing other names. Brain-imaging studies show distinct responses to a person’s own name, including activity in regions associated with self-related processing.</p>
                 <p>Other research has found that our own name can capture attention even when we aren’t actively listening for it. It makes sense: from our earliest years, our name becomes one of the sounds most closely connected to us.</p>
+                <div className="mt-7 rounded-2xl bg-secondary/30 border border-border/50 p-6">
+                  <h3 className="font-heading text-2xl font-semibold text-foreground">There’s science behind this, too.</h3>
+                  <p className="mt-3">Studies using fMRI and EEG have found that the brain responds differently to a person’s own name, including when the name is not the focus of attention.</p>
+                  <div className="mt-4 flex flex-col gap-2 text-sm font-semibold">
+                    <a className="text-primary hover:underline" href="https://pubmed.ncbi.nlm.nih.gov/16959226/" target="_blank" rel="noreferrer">Brain activation when hearing one’s own and others’ names (2006) →</a>
+                    <a className="text-primary hover:underline" href="https://pubmed.ncbi.nlm.nih.gov/26374785/" target="_blank" rel="noreferrer">How the Non-attending Brain Hears Its Owner’s Name (2016) →</a>
+                    <a className="text-primary hover:underline" href="https://pubmed.ncbi.nlm.nih.gov/7555920/" target="_blank" rel="noreferrer">P300 in response to the subject’s own name (1995) →</a>
+                  </div>
+                </div>
               </div>
             </div>
 
