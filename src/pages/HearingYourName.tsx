@@ -1,7 +1,7 @@
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import Contact from '@/components/Contact';
-import hearingYourName from '@/assets/thought-rise-morning.png';
+import hearingYourName from '@/assets/woman-headphones.png';
 
 const HearingYourName = () => {
   return (
@@ -19,7 +19,7 @@ const HearingYourName = () => {
         <section className="bg-background">
           <div className="container-narrow mx-auto px-6 pt-10 md:pt-14">
             <div className="max-w-4xl mx-auto overflow-hidden rounded-3xl shadow-lg border border-border/40">
-              <img src={hearingYourName} alt="A quiet morning with a Bible, journal, and coffee" className="w-full h-64 md:h-96 object-cover" />
+              <img src={hearingYourName} alt="A woman peacefully listening with headphones" className="w-full h-64 md:h-96 object-cover" />
             </div>
           </div>
         </section>
