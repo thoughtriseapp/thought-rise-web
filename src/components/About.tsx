@@ -1,67 +1,58 @@
+import { useState } from 'react';
 import { motion } from 'framer-motion';
+import { Link } from 'react-router-dom';
+import { Play } from 'lucide-react';
 import { useScrollAnimation } from '@/hooks/useScrollAnimation';
-import aboutFounders from '@/assets/about-founders.jpg';
 
 const About = () => {
   const { ref, isVisible } = useScrollAnimation({ threshold: 0.1 });
+  const [isPlaying, setIsPlaying] = useState(false);
 
   return (
     <section id="about" className="section-padding bg-background">
       <div ref={ref} className="container-narrow mx-auto">
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          animate={isVisible ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
-          transition={{ duration: 0.6 }}
-          className="text-center mb-12"
-        >
-          <h2 className="font-script text-6xl md:text-7xl lg:text-8xl text-foreground" style={{ wordSpacing: '0.3em' }}>
-            Meet Julie & Brianna
-          </h2>
-          <p className="mt-3 text-xl md:text-2xl text-foreground tracking-wider">
-            The Mother-Daughter Duo Behind Thought Rise
-          </p>
+        <motion.div initial={{ opacity: 0, y: 30 }} animate={isVisible ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }} transition={{ duration: 0.6 }} className="text-center max-w-3xl mx-auto mb-10">
+          <p className="text-primary font-semibold tracking-widest uppercase text-sm">Meet Thought Rise</p>
+          <h2 className="font-heading text-4xl md:text-5xl font-semibold text-foreground mt-3">See what Thought Rise is all about.</h2>
+          <p className="mt-5 text-muted-foreground text-base md:text-lg leading-relaxed">Take a few minutes to hear why we created Thought Rise and how this personalized, Scripture-centered experience can become part of your morning with Jesus.</p>
         </motion.div>
 
-        <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
-          {/* Square Image with Rounded Corners */}
-          <motion.div
-            initial={{ opacity: 0, scale: 0.95 }}
-            animate={isVisible ? { opacity: 1, scale: 1 } : { opacity: 0, scale: 0.95 }}
-            transition={{ duration: 0.7, delay: 0.2 }}
-            className="relative flex justify-center"
-          >
-            <div className="aspect-square max-w-md w-full overflow-hidden rounded-2xl shadow-xl">
-              <img
-                src={aboutFounders}
-                alt="Julie Kern and Brianna Collins"
-                className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
+        <motion.div initial={{ opacity: 0, y: 30 }} animate={isVisible ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }} transition={{ duration: 0.7, delay: 0.15 }} className="max-w-4xl mx-auto">
+          <div className="relative w-full overflow-hidden rounded-2xl shadow-xl border border-border/50 bg-secondary/20 aspect-video">
+            {isPlaying ? (
+              <iframe
+                className="absolute inset-0 w-full h-full"
+                src="https://www.youtube-nocookie.com/embed/0QIvALHw8Sc?autoplay=1&rel=0"
+                title="Thought Rise introduction"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowFullScreen
               />
-            </div>
-            
-            {/* Decorative elements */}
-            <div className="absolute -z-10 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-full bg-accent/20 rounded-full blur-3xl" />
-          </motion.div>
-
-          {/* Content */}
-          <motion.div
-            initial={{ opacity: 0, x: 40 }}
-            animate={isVisible ? { opacity: 1, x: 0 } : { opacity: 0, x: 40 }}
-            transition={{ duration: 0.7, delay: 0.3 }}
-            className="space-y-6"
-          >
-            <div className="space-y-4 text-muted-foreground leading-relaxed">
-              <p>
-                Hello! We're Julie Kern and Brianna Collins, a mother-daughter team with a shared passion for faith, personal growth, and helping others rise to their fullest potential. With backgrounds spanning ministry, entrepreneurship, and creative development, we've combined our unique gifts to create Thought Rise.
-              </p>
-              <p>
-                Our app was born from our own morning routines—practices that transformed how we approach each day. We believe that when you start your morning with intention, scripture, and gratitude, you set the stage for a life of purpose and joy.
-              </p>
-              <p>
-                Thought Rise is more than an app; it's an extension of our hearts. We're here to walk alongside you, providing daily encouragement and tools to help you grow spiritually, mentally, and emotionally. Welcome to the Thought Rise family!
-              </p>
-            </div>
-          </motion.div>
-        </div>
+            ) : (
+              <button
+                type="button"
+                onClick={() => setIsPlaying(true)}
+                className="group absolute inset-0 w-full h-full text-left overflow-hidden"
+                aria-label="Play Thought Rise introduction video"
+              >
+                <img
+                  src="https://i.ytimg.com/vi/0QIvALHw8Sc/maxresdefault.jpg"
+                  alt="Thought Rise video"
+                  loading="lazy"
+                  className="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-[1.02]"
+                />
+                <div className="absolute inset-0 bg-black/10 group-hover:bg-black/15 transition-colors" />
+                <span className="absolute inset-0 flex items-center justify-center">
+                  <span className="flex items-center justify-center w-20 h-20 md:w-24 md:h-24 rounded-full bg-background/95 text-primary shadow-xl transition-transform duration-200 group-hover:scale-105">
+                    <Play className="w-9 h-9 md:w-11 md:h-11 ml-1" fill="currentColor" />
+                  </span>
+                </span>
+              </button>
+            )}
+          </div>
+          <div className="text-center mt-7">
+            <Link to="/our-story" onClick={() => window.scrollTo({ top: 0, left: 0, behavior: 'auto' })} className="inline-flex text-primary font-semibold hover:underline">Read our story →</Link>
+          </div>
+        </motion.div>
       </div>
     </section>
   );
