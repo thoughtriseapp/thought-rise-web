@@ -55,7 +55,7 @@ const HearingYourName = () => {
               <p className="text-primary font-semibold tracking-widest uppercase text-sm">Why Thought Rise uses your name</p>
               <h2 className="font-heading text-3xl md:text-4xl font-semibold text-foreground mt-3">Your morning with Jesus shouldn’t feel anonymous.</h2>
               <div className="mt-5 space-y-4 text-muted-foreground leading-relaxed">
-                <p>That’s why hearing your own name is such an important part of the Thought Rise experience. Thought Rise greets you by name and speaks to you personally throughout your morning.</p>
+                <p>That’s why hearing your own name is such an important part of the Thought Rise experience. Thought Rise greets you by name and speaks to you personally throughout the Thought Rise experience.</p>
                 <p>We’re not suggesting that an app speaking your name is the same as God speaking your name. Instead, we hope that hearing it catches your attention and reminds you that the truths of Scripture aren’t merely truths for somebody else.</p>
                 <p className="font-heading text-2xl text-foreground">You are not anonymous to God. You are seen. You are known. You are called by name.</p>
               </div>
