@@ -7,6 +7,7 @@ const navLinks = [
   { name: 'Home', href: '/' },
   { name: 'The Experience', href: '/the-experience' },
   { name: 'Your God-Sized Dream', href: '/what-is-a-god-sized-dream' },
+  { name: 'Hearing Your Name', href: '/hearing-your-name' },
   { name: 'Our Story', href: '/our-story' },
 ];
 
