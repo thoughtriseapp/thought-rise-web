@@ -1,8 +1,6 @@
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import aboutFounders from '@/assets/about-founders.jpg';
-import julieSignature from '@/assets/julie-signature.svg';
-import briannaSignature from '@/assets/brianna-signature.svg';
 
 const OurStory = () => {
   return (
