@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom';
 import { BookOpen, Heart, Sparkles, MessageCircleHeart, HandHeart } from 'lucide-react';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
+import Contact from '@/components/Contact';
 import howItWorks from '@/assets/how-it-works-3.jpg';
 
 const steps = [
