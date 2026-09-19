@@ -1,5 +1,6 @@
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
+import Contact from '@/components/Contact';
 import hearingYourName from '@/assets/thought-rise-morning.png';
 
 const HearingYourName = () => {
@@ -80,6 +81,7 @@ const HearingYourName = () => {
             </div>
           </div>
         </section>
+        <Contact />
       </main>
       <Footer />
     </div>
