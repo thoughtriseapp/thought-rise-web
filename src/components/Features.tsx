@@ -4,7 +4,7 @@ import { useScrollAnimation } from '@/hooks/useScrollAnimation';
 import howItWorks from '@/assets/thought-rise-morning.png';
 
 const steps = [
-  { number: '01', title: 'It starts with you.', description: 'Thought Rise greets you by name and gives you a moment to settle in before the day gets moving, beginning with gratitude, intentional breathing, and even a simple stretch.' },
+  { number: '01', title: 'Settle in.', description: 'Thought Rise greets you by name and gives you a moment to settle in before the day gets moving, beginning with gratitude, intentional breathing, and even a simple stretch.' },
   { number: '02', title: 'Turn your attention to God’s Word.', description: 'A Scripture-based affirmation prepares your heart, followed by Scripture and a short devotional centered on one biblical theme explored throughout the week.' },
   { number: '03', title: 'Come back to your God-sized dream.', description: 'Hear your own God-sized dream spoken back to you, reflect on meaningful questions, and receive motivation, practical tools, and Scripture related to the bigger thing you’re pursuing.', dreamLink: true },
   { number: '04', title: 'Speak truth over your day.', description: 'Hear the three personal affirmations you’ve chosen for yourself. Change them anytime as your circumstances, priorities, or season changes.' },
@@ -42,8 +42,6 @@ const Features = () => {
             </motion.div>
           ))}
         </div>
-
-        <p className="mt-12 text-center font-heading text-2xl md:text-3xl text-foreground max-w-2xl mx-auto">The goal isn’t to keep you in the app. <span className="text-primary">It’s to help you leave it ready to live your day differently.</span></p>
       </div>
     </section>
   );
