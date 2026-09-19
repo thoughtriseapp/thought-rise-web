@@ -1,6 +1,8 @@
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import aboutFounders from '@/assets/about-founders.jpg';
+import julieSignature from '@/assets/julie-signature.svg';
+import briannaSignature from '@/assets/brianna-signature.svg';
 
 const OurStory = () => {
   return (
@@ -32,7 +34,7 @@ const OurStory = () => {
                 <p>When Julie shared the idea with Brianna, something clicked. Julie had spent more than 20 years in software development before becoming an entrepreneur. Brianna was already using her creativity as a Christian designer and business owner. Our backgrounds were very different, but suddenly they made a lot of sense together.</p>
                 <p>So we started building.</p>
                 <p>Thought Rise has grown since that first conversation, but the heart behind it really hasn’t changed. We want it to feel less like another thing to check off your morning list and more like a few intentional minutes with Jesus that are personal to you.</p>
-                <p className="font-heading text-2xl text-foreground">Our prayer is that Thought Rise becomes a bright spot in your morning, helping you grow in your love for Jesus and step into your day remembering the truth of who you are and what God may be inviting you toward.</p>
+                <p className="font-heading text-2xl text-foreground">Our prayer is that Thought Rise becomes a bright spot in your morning, helping you grow in your love for Jesus and step into your day remembering the truth of who you are and what God may be inviting you toward.</p>\n                <div className="flex items-end gap-8 md:gap-12 pt-2 text-foreground">\n                  <div className="w-36 md:w-44"><img src={julieSignature} alt="Julie" className="w-full h-auto" /></div>\n                  <div className="w-44 md:w-52"><img src={briannaSignature} alt="Brianna" className="w-full h-auto" /></div>\n                </div>
               </div>
             </div>
           </div>
