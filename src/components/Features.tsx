@@ -4,7 +4,7 @@ import { useScrollAnimation } from '@/hooks/useScrollAnimation';
 import howItWorks from '@/assets/thought-rise-morning.png';
 
 const steps = [
-  { number: '01', title: 'Settle in.', description: 'Thought Rise greets you by name and gives you a moment to settle in before the day gets moving, beginning with gratitude, intentional breathing, and even a simple stretch.' },
+  { number: '01', title: 'Settle in.', description: 'Thought Rise greets you by name and gives you a moment to settle in before the day gets moving, beginning with gratitude, intentional breathing, and even a simple stretch.', nameLink: true },
   { number: '02', title: 'Turn your attention to God’s Word.', description: 'A Scripture-based affirmation prepares your heart, followed by Scripture and a short devotional centered on one biblical theme explored throughout the week.' },
   { number: '03', title: 'Come back to your God-sized dream.', description: 'Hear your own God-sized dream spoken back to you, reflect on meaningful questions, and receive motivation, practical tools, and Scripture related to the bigger thing you’re pursuing.', dreamLink: true },
   { number: '04', title: 'Speak truth over your day.', description: 'Hear the three personal affirmations you’ve chosen for yourself. Change them anytime as your circumstances, priorities, or season changes.' },
@@ -37,6 +37,7 @@ const Features = () => {
               <div>
                 <h4 className="font-heading text-xl md:text-2xl font-semibold text-foreground">{step.title}</h4>
                 <p className="mt-2 text-muted-foreground leading-relaxed">{step.description}</p>
+                {step.nameLink && <Link to="/hearing-your-name" onClick={() => window.scrollTo({ top: 0, left: 0, behavior: 'auto' })} className="inline-flex mt-3 text-sm font-semibold text-primary hover:underline">Why does hearing your name matter? →</Link>}
                 {step.dreamLink && <Link to="/what-is-a-god-sized-dream" onClick={() => window.scrollTo({ top: 0, left: 0, behavior: 'auto' })} className="inline-flex mt-3 text-sm font-semibold text-primary hover:underline">What do we mean by a “God-sized dream”? →</Link>}
               </div>
             </motion.div>
