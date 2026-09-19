@@ -9,17 +9,16 @@ const HearingYourName = () => {
       <Navbar />
       <main>
         <section className="pt-32 pb-16 md:pt-40 md:pb-20 bg-secondary/20">
-          <div className="container-narrow mx-auto px-6 text-center max-w-4xl">
-            <p className="text-primary font-semibold tracking-widest uppercase text-sm">Hearing Your Name</p>
-            <h1 className="font-heading text-4xl md:text-6xl font-semibold text-foreground mt-4">There’s something different about hearing your own name.</h1>
-            <p className="mt-6 text-lg md:text-xl text-muted-foreground leading-relaxed max-w-3xl mx-auto">Your brain recognizes it. Scripture gives names remarkable significance. And your name can remind you of one of the most personal truths in the Bible: you are known by God.</p>
-          </div>
-        </section>
-
-        <section className="bg-background">
-          <div className="container-narrow mx-auto px-6 pt-10 md:pt-14">
-            <div className="max-w-4xl mx-auto overflow-hidden rounded-3xl shadow-lg border border-border/40">
-              <img src={hearingYourName} alt="A woman peacefully listening with headphones" className="w-full h-64 md:h-96 object-cover" />
+          <div className="container-narrow mx-auto px-6 max-w-6xl">
+            <div className="grid md:grid-cols-[1.15fr_0.85fr] gap-10 md:gap-14 items-center">
+              <div className="text-center md:text-left">
+                <p className="text-primary font-semibold tracking-widest uppercase text-sm">Hearing Your Name</p>
+                <h1 className="font-sans text-4xl md:text-6xl font-semibold text-foreground mt-4">There’s something different about hearing your own name.</h1>
+                <p className="mt-6 text-lg md:text-xl text-muted-foreground leading-relaxed max-w-3xl">Your brain recognizes it. Scripture gives names remarkable significance. And your name can remind you of one of the most personal truths in the Bible: you are known by God.</p>
+              </div>
+              <div className="overflow-hidden rounded-3xl shadow-lg border border-border/40">
+                <img src={hearingYourName} alt="A woman peacefully listening with headphones" className="w-full h-80 md:h-[430px] object-cover" />
+              </div>
             </div>
           </div>
         </section>
