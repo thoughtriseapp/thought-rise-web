@@ -107,7 +107,7 @@ const GodSizedDream = () => {
               <h2 className="font-heading text-3xl md:text-4xl font-semibold text-foreground mt-3">Keep the dream in front of you. Hold the outcome loosely.</h2>
               <p className="mt-5 max-w-2xl mx-auto">That’s why your God-sized dream is part of the Thought Rise morning experience. You tell us the dream you want to keep in front of you. Thought Rise speaks it back to you, gives you questions to reflect on, and brings you motivation, practical tools, and Scripture to encourage you as you keep taking the next faithful step.</p>
               <p className="mt-4 max-w-2xl mx-auto">Not because every dream will unfold exactly the way we imagine, but because there’s value in moving forward with expectation while continuing to trust God with the outcome.</p>
-              <Link to="/the-experience" className="inline-flex mt-7 text-primary font-semibold hover:underline">Explore the Thought Rise experience →</Link>
+              <Link to="/the-experience" onClick={() => window.scrollTo(0, 0)} className="inline-flex mt-7 text-primary font-semibold hover:underline">Explore the Thought Rise experience →</Link>
             </div>
           </div>
         </section>
