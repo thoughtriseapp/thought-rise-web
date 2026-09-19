@@ -32,7 +32,7 @@ const GodSizedDream = () => {
               <p>When we talk about a <strong className="text-foreground">God-sized dream</strong> at Thought Rise, we’re not necessarily talking about doing something huge.</p>
               <p className="mt-4">Maybe your dream is to start a business or ministry, write a book, go back to school, make a career change, or improve your health and fitness. But it can also be something you can’t simply make happen: the child you’re longing for, a godly spouse for your son or daughter, a loved one coming to Christ, or a relationship you desperately want to see restored.</p>
               <p className="mt-4">What makes a dream “God-sized” isn’t how impressive it looks to anyone else. Sometimes it’s something you’re building or pursuing. Sometimes it’s something you’re faithfully praying for and placing in God’s hands.</p>
-              <p className="mt-4"><a href="https://holleygerth.com/category/god-sized-dreams/" target="_blank" rel="noopener noreferrer" className="text-primary font-semibold hover:underline">Author Holley Gerth</a> has written quite a bit about God-sized dreams, and I love the way she puts it:</p>
+              <p className="mt-4"><a href="https://holleygerth.com/category/god-sized-dreams/" target="_blank" rel="noopener noreferrer" className="text-primary font-semibold hover:underline">Author Holley Gerth</a> has written quite a bit about God-sized dreams, and we love the way she puts it:</p>
             </div>
 
             <blockquote className="my-10 rounded-2xl bg-secondary/25 border border-border/50 p-7 md:p-10 text-center">
@@ -41,7 +41,7 @@ const GodSizedDream = () => {
             </blockquote>
 
             <div>
-              <p>I think that distinction matters.</p>
+              <p>We think that distinction matters.</p>
               <p className="mt-4">A God-sized dream isn’t just another goal to accomplish. It’s something you pursue <strong className="text-foreground">with God</strong>. You take the next step you know to take, and then the next one, trusting Him as you go.</p>
               <p className="mt-4">And sometimes, the dream really <em>is</em> bigger than anything you can see yourself accomplishing on your own.</p>
               <p className="mt-4"><a href="https://www.markbatterson.com/books/chase-the-lion/" target="_blank" rel="noopener noreferrer" className="text-primary font-semibold hover:underline">Mark Batterson</a> describes that kind of dream this way:</p>
@@ -56,7 +56,7 @@ const GodSizedDream = () => {
 
             <div>
               <h2 className="font-heading text-3xl md:text-4xl font-semibold text-foreground mb-4">Why does it matter?</h2>
-              <p>Because I don’t think the dream itself is the whole point. What God does in us while we pursue it matters too.</p>
+              <p>Because we don’t think the dream itself is the whole point. What God does in us while we pursue it matters too.</p>
               <p className="mt-4">Think about how often we see this in Scripture. Moses immediately saw everything he lacked when God called him to lead Israel. David was still a shepherd when he was anointed to be king. Peter had to actually step out of the boat. Again and again, God called ordinary people to take steps that required them to trust Him beyond what they could see.</p>
               <p className="mt-4">That doesn’t mean we dream up anything we want and expect God to make it happen. That’s not what we mean by a God-sized dream.</p>
               <p className="mt-4">There has to be room for surrender. We can bring God our hopes, ideas, abilities, fears, opportunities, and plans while still saying, <em>Lead me. Redirect me if You need to. And I’ll trust You with the outcome.</em></p>
@@ -82,13 +82,13 @@ const GodSizedDream = () => {
               <p>That depends on the dream.</p>
               <p className="mt-4">Sometimes there are very real action steps to take. Make the phone call. Fill out the application. Start writing. Change the way you eat. Begin exercising. Save the money. Have the conversation.</p>
               <p className="mt-4">But some dreams involve outcomes you simply cannot control. In those seasons, moving toward the dream may look more like a commitment to prayer, spending time in Scripture, developing a habit, preparing yourself for what God may do, or faithfully showing up in the ways that are yours to do while leaving the rest with Him.</p>
-              <p className="mt-4">Either way, I think it helps to make the dream <strong className="text-foreground">specific and time-bound</strong>. That doesn’t always mean putting a deadline on the outcome, especially when the outcome isn’t yours to control. It might mean setting a date for a step you <em>can</em> take, or making a specific commitment to the time you’ll spend working, praying, learning, training, or preparing.</p>
+              <p className="mt-4">Either way, we think it helps to make the dream <strong className="text-foreground">specific and time-bound</strong>. That doesn’t always mean putting a deadline on the outcome, especially when the outcome isn’t yours to control. It might mean setting a date for a step you <em>can</em> take, or making a specific commitment to the time you’ll spend working, praying, learning, training, or preparing.</p>
               <p className="mt-4">The point isn’t to control the dream. It’s to give your faithfulness somewhere practical to go.</p>
             </div>
 
             <div>
               <h2 className="font-heading text-3xl md:text-4xl font-semibold text-foreground mb-4">Does everyone have one?</h2>
-              <p><strong className="text-foreground">I believe we do.</strong> If you don’t know what yours is yet, that doesn’t mean you don’t have one. It may simply mean you haven’t discovered it yet.</p>
+              <p><strong className="text-foreground">We believe we do.</strong> If you don’t know what yours is yet, that doesn’t mean you don’t have one. It may simply mean you haven’t discovered it yet.</p>
               <p className="mt-4">And it doesn’t have to begin with something enormous. Start with something small if you need to. What is one thing you’re praying about, hoping for, wanting to change, or feeling drawn to pursue in this season?</p>
               <p className="mt-4">Then pay attention. Is there something that keeps coming back to you in prayer? Something the Holy Spirit continues to bring to mind? Something that has been affirmed through Scripture, circumstances, or other believers you trust? That may just be the place to begin.</p>
               <p className="mt-4">Your God-sized dream doesn’t have to be perfectly worded before you enter it in Thought Rise. Give it a name. Make it as specific as you can right now. You can always refine it as God gives you greater clarity.</p>
@@ -96,7 +96,7 @@ const GodSizedDream = () => {
 
             <div>
               <h2 className="font-heading text-3xl md:text-4xl font-semibold text-foreground mb-4">How do I know if a dream is from God?</h2>
-              <p>This is where I think we need some humility. Just because we want something deeply doesn’t automatically mean God promised it to us.</p>
+              <p>This is where we think some humility matters. Just because we want something deeply doesn’t automatically mean God promised it to us.</p>
               <p className="mt-4">So bring the dream to Him. Pray about it. Hold it up against Scripture. Talk about it with wise people who know you and know Jesus. Pay attention to whether pursuing it is drawing you toward greater faithfulness, love, generosity, courage, service, and dependence on Him.</p>
               <p className="mt-4">And stay open-handed about the outcome.</p>
               <p className="mt-4">Sometimes faith means taking a courageous step forward. Sometimes it means waiting longer than we expected. And sometimes it means allowing God to reshape the dream into something we never saw coming.</p>
