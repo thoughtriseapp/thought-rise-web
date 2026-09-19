@@ -21,7 +21,7 @@ const GodSizedDream = () => {
           <div className="container-narrow mx-auto text-center relative z-10">
             <p className="text-primary font-semibold tracking-widest uppercase text-sm mb-4">God-sized dreams</p>
             <h1 className="font-heading text-5xl md:text-6xl font-semibold text-foreground leading-tight">What is a God-sized dream?</h1>
-            <p className="mt-6 text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">It’s that bigger thing on your heart. Something that may stretch you beyond what you can do on your own and invite you to depend on God as you take the next step, while trusting Him with where it ultimately leads.</p>
+            <p className="mt-6 text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">It’s that thing God has placed on your heart that you can’t quite seem to shake. Something that may stretch you beyond what you can do on your own and invite you to depend on Him as you take the next step, while trusting Him with where it ultimately leads.</p>
           </div>
         </section>
 
